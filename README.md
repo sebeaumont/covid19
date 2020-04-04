@@ -2,4 +2,4 @@
 ![growth-graphic](cov19-growth.png "Growth Rate - Selected Regions")
 
 ____________
-[https://github.com/CSSEGISandData/COVID-19](John Hopkins - GitHub Repo)
+(John Hopkins - Data Repository)[https://github.com/CSSEGISandData/COVID-19]
