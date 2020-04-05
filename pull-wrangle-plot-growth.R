@@ -4,6 +4,7 @@ library(ggplot2)
 library(readr)
 library(tidyr)
 library(dplyr)
+
 # and the wonderful R platform and RStudio - dedicated to all open source heros the
 # world over - we should celebrate the industry of so many volunteers who are
 # willing to toil and share their remarkable work.
@@ -67,12 +68,12 @@ s2$date=as.Date(s2$date, format="%m/%d/%y")
 
 s3 <- s2 %>% arrange(date, country_region, province) %>% group_by(date, country_region)
 
-s3a <- s3 %>% summarise(region_tot=sum(cumulative_cases)) %>% ungroup()
+s3a <- s3 %>% summarise(Total=sum(cumulative_cases)) %>% ungroup()
 
 s3b <- s3a %>% arrange(country_region) %>% group_by(country_region)
 
 # get the delta of new cases (discrete derivative) 
-s4 <-  s3b %>% mutate(new_cases = c(0, diff(region_tot))) %>% ungroup()
+s4 <-  s3b %>% mutate(new_cases = c(0, diff(Total))) %>% ungroup()
 
 ###############################
 # TODO: 
@@ -85,7 +86,7 @@ safe_ratio <- function(b,a) {
   ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
 }
 
-s5 <- s4 %>% mutate(growth = safe_ratio(new_cases,region_tot))
+s5 <- s4 %>% mutate(growth = safe_ratio(new_cases,Total))
 
 ###########
 # plotting 
@@ -95,7 +96,7 @@ countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sw
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7", "#F0E442")
 
 # wait until there's a few cases as acceleration is hard in the early phases
-s6 <- s5 %>% filter(country_region %in% countries, date > as.Date("2020-02-14"), region_tot > 100)
+s6 <- s5 %>% filter(country_region %in% countries, date > as.Date("2020-02-14"), Total > 100)
 
 caption <- paste("Data provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)",
                  "\nWrangling and visualization by Simon Beaumont <datalligator@icloud.com>")
@@ -103,14 +104,14 @@ caption <- paste("Data provided by Johns Hopkins University Center for Systems S
 # the gorgeoous ggplot..
 p1 <- ggplot(s6, aes(x=date,y=growth,colour=country_region,group=country_region)) + 
   # geom_line(size=2, alpha=0.3) + 
-  labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(in thousands with more than one hunderd cases)",
-       x="2020", y="Growth (new/total)", color="Region", caption=caption) +
-  geom_point(size=1) +
+  labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(more than one hunderd cases)",
+       x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
+  geom_point(aes(size=Total)) +
   geom_smooth(method='loess', formula='y ~ x', size=2, alpha=0.2) +
-  geom_text(aes(label=round(region_tot/1000, digits=2)), hjust=0, vjust=-0.5) +
+  #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
 
-# plot(p1)
+plot(p1)
 
 # YMMV
 plotter <- function (p) {
