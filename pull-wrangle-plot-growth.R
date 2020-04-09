@@ -111,7 +111,7 @@ p1 <- ggplot(s6, aes(x=date,y=growth,colour=country_region,group=country_region)
   #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
 
-plot(p1)
+#plot(p1)
 
 # YMMV
 plotter <- function (p) {
