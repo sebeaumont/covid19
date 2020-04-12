@@ -107,7 +107,7 @@ p1 <- ggplot(s6, aes(x=date,y=growth,colour=country_region,group=country_region)
   labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(more than one hunderd cases)",
        x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
   geom_point(aes(size=Total)) +
-  geom_smooth(method='loess', formula='y ~ x', size=2, alpha=0.2) +
+  geom_smooth(method='loess', formula='y ~ x', size=1, alpha=0.2) +
   #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
 
