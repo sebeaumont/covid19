@@ -1,15 +1,14 @@
-# making grateful use of...
 library(tidyverse)
 library(ggplot2)
 library(readr)
 library(tidyr)
 library(dplyr)
 
-# Made using the R language platform and RStudio - 
-# This work dedicated to all open source heroes the
-# world over and celebrating the industry of so many volunteers who are
-# willing to toil and share their remarkable work for the common good.
-# I salute you.
+# Made using the R language platform, tidyverse and RStudio - This
+# work dedicated to all open source heroes the world over and
+# celebrating the industry of so many volunteers who are willing to
+# toil and share their remarkable work for the common good.  I salute
+# you.
 
 #############################################################################
 # Copyright (C) 2020 Simon Beaumont 
@@ -27,9 +26,6 @@ library(dplyr)
 # and welcomes PRs for improvements and better ideas.
 # Created: Apr 2020 Simon Beaumont
 
-# Subject to plotting preferecnces this script should work merely invoking R from
-# the command line -- see: below. RStudio is more fun.
-
 # Population Data from 2018 WorldBank held locally is joined with JH data
 #
 get_population <- function () { 
@@ -41,13 +37,13 @@ get_population <- function () {
 
 population <- get_population()
 
-# growth ratio computation - take sqrt to dilute todo make nth root a paramter
+## growth ratio computation - take sqrt to dilute todo make nth root a paramter
 safe_ratio <- function(b,a) { 
   ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
 }
 
-# Use [John Hopkins Repo](https://github.com/CSSEGISandData/COVID-19) to get the pandemic data
-get_time_series_covid19_confirmed_global <- function() {
+## Use [John Hopkins Repo](https://github.com/CSSEGISandData/COVID-19) to get the pandemic data
+get_time_series_covid19_confirmed_global <- function(population_table, growth_function) {
   
   source_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
   # read data
@@ -75,28 +71,31 @@ get_time_series_covid19_confirmed_global <- function() {
     # get the delta of new cases (discrete derivative) 
     mutate(new_cases = c(0, diff(Total))) %>% ungroup() %>% 
     # join population by country
-    inner_join(population) %>% 
+    inner_join(population_table) %>% 
     # add new columns for growth and PerCapita total cases to date
-    mutate(growth = safe_ratio(new_cases,Total), PerCapita = Total/population) 
+    mutate(growth = growth_function(new_cases,Total), PerCapita = Total/population) 
   }
 
-###########
-# plotting 
-s3 <- get_time_series_covid19_confirmed_global()
 
-# selected countries -- choose up to 8 from population$country
+#############
+## Plotting #
+#############
+
+s3 <- get_time_series_covid19_confirmed_global(population, safe_ratio)
+
+## selected countries -- choose up to 8 from population$country
 selectable_countries <- unique(s3$country)
 
 countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7", "#F0E442")
 
-# wait until there's a few cases 
+## wait until there's a few cases 
 s6 <- s3 %>% filter(country %in% countries, date > as.Date("20-02-14", format="%y-%m-%d"), Total > 100)
 
 caption <- paste("Data provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)",
                  "\nWrangling and visualization by Simon Beaumont <datalligator@icloud.com>")
 
-# the gorgeoous ggplot..
+## the gorgeoous ggplot..
 p1 <- ggplot(s6, aes(x=date,y=growth,colour=country,group=country)) + 
   # geom_line(size=2, alpha=0.3) + 
   labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(starting when more than 100 cases)",
@@ -106,9 +105,8 @@ p1 <- ggplot(s6, aes(x=date,y=growth,colour=country,group=country)) +
   #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
 
-plot(p1)
 
-# YMMV
+## output plotter
 plotter <- function (p) {
   png(file="cov19-growth.png", width=1440, height=900)
   plot(p)
