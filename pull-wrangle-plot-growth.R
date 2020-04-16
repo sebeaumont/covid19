@@ -83,6 +83,9 @@ get_time_series_covid19_confirmed_global <- function(population_table, growth_fu
 
 s3 <- get_time_series_covid19_confirmed_global(population, safe_ratio)
 
+# save the processed data here
+write_csv(s3, "covid19_time_series_confirmed_global_wrangled.csv")
+
 ## selected countries -- choose up to 8 from population$country
 selectable_countries <- unique(s3$country)
 
