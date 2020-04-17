@@ -77,33 +77,44 @@ get_time_series_covid19_confirmed_global <- function(population_table, growth_fu
   }
 
 
-#############
-## Plotting #
-#############
 
 s3 <- get_time_series_covid19_confirmed_global(population, safe_ratio)
 
 # save the processed data here
-write_csv(s3, "covid19_time_series_confirmed_global_wrangled.csv")
+write_tsv(s3, "covid19_time_series_confirmed_global_wrangled.tsv")
+
+#############
+## Plotting #
+#############
+
+## TODO all these thresholds parameterised via UI into plot function
+
+## wait until there's significant number of cases 
+s6 <- s3 %>% filter(Total > 100)
 
 ## selected countries -- choose up to 8 from population$country
-selectable_countries <- unique(s3$country)
+selectable_countries <- unique(s6$country)
 
+## TODO choose from selectable_countries
 countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
+
+## Date and country selection
+s7 <- s6 %>% filter(country %in% countries, date > as.Date("20-02-14", format="%y-%m-%d"))
+
+## 8 custom colours 
 cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7", "#F0E442")
 
-## wait until there's a few cases 
-s6 <- s3 %>% filter(country %in% countries, date > as.Date("20-02-14", format="%y-%m-%d"), Total > 100)
 
+## Required under terms of distibution please.
 caption <- paste("Data provided by Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)",
                  "\nWrangling and visualization by Simon Beaumont <datalligator@icloud.com>")
 
 ## the gorgeoous ggplot..
-p1 <- ggplot(s6, aes(x=date,y=growth,colour=country,group=country)) + 
+p1 <- ggplot(s7, aes(x=date,y=growth,colour=country,group=country)) + 
   # geom_line(size=2, alpha=0.3) + 
   labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(starting when more than 100 cases)",
        x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
-  geom_point(aes(size=PerCapita)) +
+  geom_point(aes(size=PerCapita, alpha=0.4)) +
   geom_smooth(method='loess', formula='y ~ x', size=1, alpha=0.2) +
   #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
