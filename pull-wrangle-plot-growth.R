@@ -114,7 +114,7 @@ p1 <- ggplot(s7, aes(x=date,y=growth,colour=country,group=country)) +
   # geom_line(size=2, alpha=0.3) + 
   labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(starting when more than 100 cases)",
        x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
-  geom_point(aes(size=PerCapita, alpha=0.4)) +
+  geom_point(aes(size=PerCapita), alpha=0.7) +
   geom_smooth(method='loess', formula='y ~ x', size=1, alpha=0.2) +
   #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
   scale_color_manual(values=cbPalette)
