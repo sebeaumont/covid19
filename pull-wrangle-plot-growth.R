@@ -96,7 +96,7 @@ s6 <- s3 %>% filter(Total > 100)
 selectable_countries <- unique(s6$country)
 
 ## TODO choose from selectable_countries
-countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
+countries <- c("US", "Japan", "United Kingdom","Germany", "Italy", "France", "Sweden")
 
 ## Date and country selection
 s7 <- s6 %>% filter(country %in% countries, date > as.Date("20-02-14", format="%y-%m-%d"))
