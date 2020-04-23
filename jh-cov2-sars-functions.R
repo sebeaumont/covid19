@@ -34,7 +34,7 @@ library(dplyr)
 ## from 2018 WorldBank held locally is joined with JH data
 ## to do per capita calculations
 
-get_population <- function () { 
+get_population_data <- function () { 
   read_csv("population.csv",
            col_types = cols(.default = col_double(),
                            `Country Name` = col_character(),
@@ -46,23 +46,20 @@ get_population <- function () {
     mutate(country=replace(country, country=="United States", "US"))
 }
 
-population <- get_population()
-
 ## growth ratio computation - take sqrt to dilute todo make nth root a paramter
 safe_ratio <- function(b,a) { 
   ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
 }
 
 ## Use [John Hopkins Repo](https://github.com/CSSEGISandData/COVID-19) to get the pandemic data
-get_time_series_covid19_confirmed_global <- function(population_table, growth_function) {
+get_time_series_covid19_confirmed_global <- function(population_table, growth_function, source_uri) {
   
-  source_url <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
-  # read data
-  read_csv(source_url,
-          col_types = cols(.default = col_double(),
-                           `Province/State` = col_character(),
-                           `Country/Region` = col_character())) %>%
-    # rename columns
+    ## read data
+    read_csv(source_uri,
+             col_types = cols(.default = col_double(),
+                              `Province/State` = col_character(),
+                              `Country/Region` = col_character())) %>%
+     # rename columns
     rename(province = "Province/State", country = "Country/Region") %>%
     # drop columns
     select(-c(Lat, Long)) %>%
@@ -85,40 +82,26 @@ get_time_series_covid19_confirmed_global <- function(population_table, growth_fu
     inner_join(population_table, by=c("country")) %>% 
     # add new columns for growth and PerCapita total cases to date
     mutate(growth = growth_function(new_cases,Total), PerCapita = Total/population) 
-  }
-
-
-s3 <- get_time_series_covid19_confirmed_global(population, safe_ratio)
-
-# save the processed data here
-write_tsv(s3, "covid19_time_series_confirmed_global_wrangled.tsv")
-
-#######################
-## Parameter selection
-#######################
-
-get_significant_caseload <- function (data, threshold) {
-  data %>% filter(Total>threshold)
 }
 
-## unique set of countries from data
-get_countries <- function (data) {
-  data %>% select(country) %>% unique()
+ensure_data <- function (population_table, growth_fn) {
+    ## remote and local cache for data
+    jhcsse_github_cov2_conf <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+    cov2_conf_local <- "covid19_time_series_confirmed_global_wrangled.tsv"
+
+    tryCatch({
+        data <- get_time_series_covid19_confirmed_global(population_table,
+                                                         growth_fn,
+                                                         jhcsse_github_cov2_conf)
+        write_tsv(data, cov2_conf_local)
+        return(data)
+    },
+    error = function(cond) {
+        message(paste("error: ", cond, " reading url: ", jhcsse_github_cov2_conf))
+        message(paste("attempting failover from cached file: ", cov2_conf_local))
+        read_tsv(cov2_conf_local);
+    })
 }
-
-s6 <- s3 %>% get_significant_caseload(500)
-
-## get starting date
-starting_date <- as.Date("20-02-14", format="%y-%m-%d")
-
-## TODO choose up to 8 from selectable_countries
-
-## selected countries -- choose up to 8 from population$country
-selectable_countries <- s6 %>% get_countries()
-
-countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
-
-s7 <- s6 %>% filter(country %in% countries, date > starting_date)
 
 #############
 ## Plotting #
@@ -143,11 +126,48 @@ plot_confirmed_cases_growth <- function (data) {
     scale_color_manual(values=cbPalette)
 }
 
+
+#######################
+## Parameter selection
+#######################
+
+get_significant_caseload <- function (data, threshold) {
+  data %>% filter(Total>threshold)
+}
+
+## unique set of countries from data
+get_countries <- function (data) {
+  data %>% select(country) %>% unique()
+}
+
 ## output plotter
 plotter <- function (p) {
   png(file="cov19-growth.png", width=1440, height=900)
   plot(p)
   dev.off()
 }
+
+#######
+## Run 
+#######
+
+s3 <- ensure_data(get_population_data(), safe_ratio)
+
+s6 <- s3 %>% get_significant_caseload(500)
+
+## get starting date /UI
+starting_date <- as.Date("20-02-14", format="%y-%m-%d")
+
+## TODO choose up to 8 from selectable_countries
+
+## selected countries -- choose up to 8 from population$country
+selectable_countries <- s6 %>% get_countries()
+
+countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
+
+s7 <- s6 %>% filter(country %in% countries, date > starting_date)
+
+plotter(plot_confirmed_cases_growth(s7))
+
 
 
