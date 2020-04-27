@@ -7,8 +7,8 @@ library(dplyr)
 # Made using the R language platform, tidyverse and RStudio - This
 # work dedicated to all open source heroes the world over and
 # celebrating the industry of so many volunteers who are willing to
-# toil and share their remarkable work for the common good.  I salute
-# you.
+# toil and share their remarkable work for the common good.
+
 
 #############################################################################
 # Copyright (C) 2020 Simon Beaumont 
@@ -30,69 +30,16 @@ library(dplyr)
 ## Data wrangling #
 ###################
 
-## Population Data 
-## from 2018 WorldBank held locally is joined with JH data
-## to do per capita calculations
+## get jh confirmed cases data from github or local cache
+## [John Hopkins Repo](https://github.com/CSSEGISandData/COVID-19) to get the pandemic data
 
-get_population_data <- function () { 
-  read_csv("population.csv",
-           col_types = cols(.default = col_double(),
-                           `Country Name` = col_character(),
-                           `Country Code` = col_character(),
-                           `Indicator Name` = col_character()),
-           col_names = TRUE) %>% 
-    select(`Country Name`, `2018`) %>% 
-    rename(country=`Country Name`,population=`2018`) %>%
-    mutate(country=replace(country, country=="United States", "US"))
-}
-
-## growth ratio computation - take sqrt to dilute todo make nth root a paramter
-safe_ratio <- function(b,a) { 
-  ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
-}
-
-## Use [John Hopkins Repo](https://github.com/CSSEGISandData/COVID-19) to get the pandemic data
-get_time_series_covid19_confirmed_global <- function(population_table, growth_function, source_uri) {
-  
-    ## read data
-    read_csv(source_uri,
-             col_types = cols(.default = col_double(),
-                              `Province/State` = col_character(),
-                              `Country/Region` = col_character())) %>%
-     # rename columns
-    rename(province = "Province/State", country = "Country/Region") %>%
-    # drop columns
-    select(-c(Lat, Long)) %>%
-    # tidy to long table
-    pivot_longer(-c(province, country), 
-                  names_to = "date",
-                  # this maybe needs a format string to convert - see below
-                  names_ptypes = c("date", date),
-                  values_to = "cumulative_cases") %>%
-    # as this is time series data convert from US colloquial date format to a proper date type
-    mutate(date=as.Date(date, format="%m/%d/%y")) %>%
-    # get data in shape for summarizing by administrative region/country
-    arrange(date, country, province) %>% group_by(date, country) %>%
-    # total to date by country
-    summarise(Total=sum(cumulative_cases)) %>% ungroup() %>%
-    arrange(country) %>% group_by(country) %>%
-    # get the delta of new cases (discrete derivative) 
-    mutate(new_cases = c(0, diff(Total))) %>% ungroup() %>% 
-    # join population by country
-    inner_join(population_table, by=c("country")) %>% 
-    # add new columns for growth and PerCapita total cases to date
-    mutate(growth = growth_function(new_cases,Total), PerCapita = Total/population) 
-}
-
-ensure_data <- function (population_table, growth_fn) {
+ensure_data <- function () {
     ## remote and local cache for data
     jhcsse_github_cov2_conf <- "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
     cov2_conf_local <- "covid19_time_series_confirmed_global_wrangled.tsv"
 
     tryCatch({
-        data <- get_time_series_covid19_confirmed_global(population_table,
-                                                         growth_fn,
-                                                         jhcsse_github_cov2_conf)
+        data <- get_time_series_covid19_confirmed_global(jhcsse_github_cov2_conf)
         write_tsv(data, cov2_conf_local)
         return(data)
     },
@@ -102,6 +49,83 @@ ensure_data <- function (population_table, growth_fn) {
         read_tsv(cov2_conf_local);
     })
 }
+
+
+## Population Data from 2018 WorldBank held locally is joined with JH
+## data to do per capita calculations
+
+get_population_table <- function () { 
+    read_csv("population.csv",
+             col_types = cols(.default = col_double(),
+                              `Country Name` = col_character(),
+                              `Country Code` = col_character(),
+                              `Indicator Name` = col_character()),
+             col_names = TRUE) %>% 
+        select(`Country Name`, `2018`) %>% 
+        rename(country=`Country Name`,population=`2018`) %>%
+        mutate(country=replace(country, country=="United States", "US"))
+}
+
+
+## growth ratio computation
+## take sqrt to dilute todo make nth root a paramter
+
+safe_ratio <- function(b,a) { 
+    ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
+}
+
+
+## read raw data and wrangle into table
+
+get_time_series_covid19_confirmed_global <- function(source_uri) {
+    ## read data
+    read_csv(source_uri,
+             col_types = cols(.default = col_double(),
+                              `Province/State` = col_character(),
+                              `Country/Region` = col_character())) %>%
+                                        # rename columns
+        rename(province = "Province/State", country = "Country/Region") %>%
+                                        # drop columns
+        select(-c(Lat, Long)) %>%
+                                        # tidy to long table
+        pivot_longer(-c(province, country), 
+                     names_to = "date",
+                     ## this maybe needs a format string to convert - see below
+                     names_ptypes = c("date", date),
+                     values_to = "cumulative_cases") %>%
+        
+        ## as this is time series data convert from US colloquial date to sortable 
+        mutate(date=as.Date(date, format="%m/%d/%y")) %>%
+        ## get data in shape for summarizing by administrative region/country
+        arrange(date, country, province) %>% group_by(date, country) %>%
+        ## total to date by country
+        summarise(Total=sum(cumulative_cases)) %>% ungroup() %>%
+        arrange(country) %>% group_by(country) %>%
+        ## get the delta of new cases (discrete derivative) 
+        mutate(new_cases = c(0, diff(Total))) %>% ungroup()
+}
+
+#######################
+## data tranformations
+#######################
+
+## apply population stats 
+##
+calculate_population_stats <- function (data, population_table) {
+    data %>%
+        ## join population by country
+        inner_join(population_table, by=c("country")) %>% 
+        ## add new columns for PerCapita total cases to date
+        mutate(PerCapita = Total/population)
+}
+
+
+## apply growth computation to data
+##
+apply_growth_function <- function (data, growth_fn) {
+    data %>% mutate(growth = growth_fn(new_cases,Total))
+}
+
 
 #############
 ## Plotting #
@@ -127,47 +151,19 @@ plot_confirmed_cases_growth <- function (data) {
 }
 
 
-#######################
-## Parameter selection
-#######################
+############################
+## Plot parameter selection
+############################
 
 get_significant_caseload <- function (data, threshold) {
-  data %>% filter(Total>threshold)
+    data %>% filter(Total>threshold)
 }
 
 ## unique set of countries from data
 get_countries <- function (data) {
-  data %>% select(country) %>% unique()
+    data %>% select(country) %>% unique()
 }
 
-## output plotter
-plotter <- function (p) {
-  png(file="cov19-growth.png", width=1440, height=900)
-  plot(p)
-  dev.off()
-}
-
-#######
-## Run 
-#######
-
-s3 <- ensure_data(get_population_data(), safe_ratio)
-
-s6 <- s3 %>% get_significant_caseload(500)
-
-## get starting date /UI
-starting_date <- as.Date("20-02-14", format="%y-%m-%d")
-
-## TODO choose up to 8 from selectable_countries
-
-## selected countries -- choose up to 8 from population$country
-selectable_countries <- s6 %>% get_countries()
-
-countries <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
-
-s7 <- s6 %>% filter(country %in% countries, date > starting_date)
-
-plotter(plot_confirmed_cases_growth(s7))
 
 
 
