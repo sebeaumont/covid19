@@ -2,7 +2,7 @@ library(shiny)
 source("jh-cov2-sars-functions.R")
 
 initial <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
-base_data <- ensure_data() %>% calculate_population_stats(get_population_table())
+base_data <-
 countries <- base_data %>% get_countries()
 
 ##
@@ -11,8 +11,13 @@ countries <- base_data %>% get_countries()
 
 server <- function (input, output, session) {
 
+    base_data <- reactive({
+        input$refresh
+        ensure_data() %>% calculate_population_stats(get_population_table())
+    })
+    
     growth_stats <- reactive({
-        base_data %>% apply_growth_function(safe_ratio)
+        base_data() %>% apply_growth_function()
     })
 
     filtered_by_caseload <- reactive({
@@ -44,23 +49,19 @@ server <- function (input, output, session) {
 
 ui <- fluidPage(
 
-    titlePanel("SARS-CoV2-Pandemic"),
-
-    sidebarLayout(
-
-        sidebarPanel(
-            
-            helpText("Select (up to 8) countries to compare for confirmed case growth rates."),
-
-            dateInput("startDate", "Starting Date", "2020-02-14"),
-            
-            sliderInput("threshold", "Starting Cases", 50, 500, 100),
-            
-            selectInput("countries", "Countries", countries, selected=initial, multiple=TRUE)
-
-        ),
-
-        mainPanel(plotOutput("plot"))
+    title = "SARS-CoV2-Pandemic Data Explorer",
+    plotOutput("plot", height="700px"),
+    hr(),
+    
+    fluidRow(
+        column(2,
+               dateInput("startDate", "Starting Date", "2020-02-14"),
+               actionButton("refresh", "Refresh Data")),
+        column(2,
+               numericInput("threshold", "Starting Cases", 300, min=0, step=500)),
+        column(8,
+               selectInput("countries", "Countries", countries, selected=initial, multiple=TRUE)
+               )
     )
 )
 

@@ -70,10 +70,9 @@ get_population_table <- function () {
 ## growth ratio computation
 ## take sqrt to dilute todo make nth root a paramter
 
-safe_ratio <- function(b,a) { 
-    ifelse(a==0, 0, ifelse(a<0, -sqrt(abs(b/a)), sqrt(abs(b/a))))
+safe_div <- function(b, a) { 
+    ifelse(a==0, 0, b/a)
 }
-
 
 ## read raw data and wrangle into table
 
@@ -122,7 +121,7 @@ calculate_population_stats <- function (data, population_table) {
 
 ## apply growth computation to data
 ##
-apply_growth_function <- function (data, growth_fn) {
+apply_growth_function <- function (data, growth_fn = safe_div) {
     data %>% mutate(growth = growth_fn(new_cases,Total))
 }
 
@@ -141,9 +140,8 @@ plot_confirmed_cases_growth <- function (data) {
 
   ## Gorgeous ggplot..
   ggplot(data, aes(x=date,y=growth,colour=country,group=country)) + 
-    # geom_line(size=2, alpha=0.3) + 
-    labs(title="SARS-CoV-2 Confirmed Cases", subtitle="(starting when more than 100 cases)",
-        x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
+    labs(title="SARS-CoV-2 Confirmed Cases", 
+         x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
     geom_point(aes(size=PerCapita), alpha=0.7) +
     geom_smooth(method='loess', formula='y ~ x', size=1, alpha=0.2) +
     #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
