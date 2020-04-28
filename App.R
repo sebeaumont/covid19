@@ -2,8 +2,6 @@ library(shiny)
 source("jh-cov2-sars-functions.R")
 
 initial <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
-base_data <-
-countries <- base_data %>% get_countries()
 
 ##
 ## called once per hit hence reactive functions to apply transformations
@@ -11,9 +9,14 @@ countries <- base_data %>% get_countries()
 
 server <- function (input, output, session) {
 
+    
     base_data <- reactive({
         input$refresh
         ensure_data() %>% calculate_population_stats(get_population_table())
+    })
+
+    countries <- reactive({
+        base_data() %>% get_countries()
     })
     
     growth_stats <- reactive({
@@ -32,11 +35,12 @@ server <- function (input, output, session) {
         starting_from() %>% filter(country %in% input$countries)
     })
 
-    ## observe({
-    ##     selectable_countries <- starting_from() %>% get_countries()
-    ##     updateSelectInput(session, "countries", "Countries",
-    ##                       choices = selectable_countries)
-    ## })
+    observe({
+        selectable_countries <- countries()
+        updateSelectInput(session, "countries", "Countries",
+                          choices = selectable_countries,
+                          selected = input$countries)
+    })
     
     output$plot <- renderPlot({
         plot_confirmed_cases_growth(selected_by_countries())
@@ -60,7 +64,7 @@ ui <- fluidPage(
         column(2,
                numericInput("threshold", "Starting Cases", 300, min=0, step=500)),
         column(8,
-               selectInput("countries", "Countries", countries, selected=initial, multiple=TRUE)
+               selectInput("countries", "Countries", initial, selected=initial, multiple=TRUE)
                )
     )
 )
