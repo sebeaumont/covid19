@@ -1,7 +1,7 @@
 library(shiny)
 source("jh-cov2-sars-functions.R")
 
-initial <- c("US", "China", "United Kingdom","Germany", "Italy", "France", "Sweden")
+initial <- c("US", "India", "United Kingdom","Germany", "Italy", "Poland", "Sweden")
 
 ##
 ## called once per hit hence reactive functions to apply transformations

@@ -122,7 +122,7 @@ calculate_population_stats <- function (data, population_table) {
 ## apply growth computation to data
 ##
 apply_growth_function <- function (data, growth_fn = safe_div) {
-    data %>% mutate(growth = growth_fn(new_cases,Total))
+    data %>% mutate(growth = growth_fn(new_cases,population))
 }
 
 
@@ -141,7 +141,7 @@ plot_confirmed_cases_growth <- function (data) {
   ## Gorgeous ggplot..
   ggplot(data, aes(x=date,y=growth,colour=country,group=country)) + 
     labs(title="SARS-CoV-2 Confirmed Cases", 
-         x="2020", y="Growth (new/total)", color="Region", points="Total Cases", caption=caption) +
+         x="2020", y="Growth (new/per-capita)", color="Region", points="Total Cases", caption=caption) +
     geom_point(aes(size=PerCapita), alpha=0.7) +
     geom_smooth(method='loess', formula='y ~ x', size=1, alpha=0.2) +
     #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
