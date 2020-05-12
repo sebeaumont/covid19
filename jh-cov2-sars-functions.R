@@ -55,15 +55,12 @@ ensure_data <- function () {
 ## data to do per capita calculations
 
 get_population_table <- function () { 
-    read_csv("population.csv",
-             col_types = cols(.default = col_double(),
-                              `Country Name` = col_character(),
-                              `Country Code` = col_character(),
-                              `Indicator Name` = col_character()),
-             col_names = TRUE) %>% 
-        select(`Country Name`, `2018`) %>% 
-        rename(country=`Country Name`,population=`2018`) %>%
-        mutate(country=replace(country, country=="United States", "US"))
+    read_tsv("concordance.tsv",
+             col_types = cols(country = col_character(),
+                              country_alias = col_character(),
+                              population = col_double()),
+             col_names = c("country", "country_alias", "population")) 
+
 }
 
 
