@@ -127,7 +127,7 @@ apply_growth_function <- function (data, growth_fn = safe_div) {
 ## Plotting #
 #############
 
-plot_confirmed_cases_growth <- function (data) {
+plot_confirmed_cases_growth <- function (data, smooth) {
   ## 8 custom colours 
   cbPalette <- c("#999999", "#E69F00", "#56B4E9", "#009E73", "#0072B2", "#D55E00", "#CC79A7", "#F0E442")
 
@@ -140,7 +140,7 @@ plot_confirmed_cases_growth <- function (data) {
     labs(title="SARS-CoV-2 Confirmed Cases", 
          x="2020", y="Growth (new/per-capita)", color="Region", points="Total Cases", caption=caption) +
     geom_point(aes(size=PerCapita), alpha=0.7) +
-    geom_smooth(method='loess', formula='y ~ x', span=0.3, size=1, alpha=0.2) +
+    geom_smooth(method='loess', formula='y ~ x', span=smooth, size=1, alpha=0.2) +
     #geom_text(aes(label=round(Total/1000, digits=0)), hjust=0, vjust=0) +
     scale_color_manual(values=cbPalette)
 }
