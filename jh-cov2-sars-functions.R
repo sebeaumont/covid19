@@ -65,7 +65,6 @@ get_population_table <- function () {
 
 
 ## growth ratio computation
-## take sqrt to dilute todo make nth root a paramter
 
 safe_div <- function(b, a) { 
     ifelse(a==0, 0, b/a)
@@ -106,7 +105,7 @@ get_time_series_covid19_confirmed_global <- function(source_uri) {
 #######################
 
 ## apply population stats 
-##
+
 calculate_population_stats <- function (data, population_table) {
     data %>%
         ## join population by country
@@ -117,11 +116,20 @@ calculate_population_stats <- function (data, population_table) {
 
 
 ## apply growth computation to data
-##
+
 apply_growth_function <- function (data, growth_fn = safe_div) {
     data %>% mutate(growth = growth_fn(new_cases,population))
 }
 
+## outliers 
+is_outlier <- function (x) {
+  return(x < quantile(x, 0.25) - 1.5 * IQR(x) | x > quantile(x, 0.75) + 1.5 * IQR(x))
+}
+
+## filter outliers (from normalised growth value - which is what we plot)
+apply_outlier_filter <- function (data, filterp = TRUE) {
+  if (filterp) data %>% mutate(outlier = is_outlier(growth)) %>% filter(outlier == FALSE) else data
+}
 
 #############
 ## Plotting #
@@ -158,7 +166,4 @@ get_significant_caseload <- function (data, threshold) {
 get_countries <- function (data) {
     data %>% select(country) %>% unique()
 }
-
-
-
 

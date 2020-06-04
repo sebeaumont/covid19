@@ -35,10 +35,14 @@ server <- function (input, output, session) {
         starting_from() %>% filter(country %in% input$countries)
     })
 
+    filtered_data <- reactive({
+        selected_by_countries() %>% apply_outlier_filter(input$filter_outliers)
+    })
+    
     smoothing_coefficient <- reactive({
         input$smoothing
     })
-    
+
     observe({
         selectable_countries <- countries()
         updateSelectInput(session, "countries", "Countries",
@@ -47,7 +51,7 @@ server <- function (input, output, session) {
     })
     
     output$plot <- renderPlot({
-        plot_confirmed_cases_growth(selected_by_countries(), smoothing_coefficient())
+        plot_confirmed_cases_growth(filtered_data(), smoothing_coefficient())
     })
 }
 
@@ -69,8 +73,8 @@ ui <- fluidPage(
                numericInput("threshold", "Starting Cases", 300, min=0, step=500),
                sliderInput("smoothing" , "Fit Smoothing", min=0, max=1, value=0.5)),
         column(8,
-               selectInput("countries", "Countries", initial, selected=initial, multiple=TRUE)
-               )
+               selectInput("countries", "Countries", initial, selected=initial, multiple=TRUE),
+               checkboxInput("filter_outliers", label = "Remove outliers", value=TRUE))
     )
 )
 
