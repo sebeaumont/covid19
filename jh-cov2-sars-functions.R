@@ -94,7 +94,7 @@ get_time_series_covid19_confirmed_global <- function(source_uri) {
         ## get data in shape for summarizing by administrative region/country
         arrange(date, country, province) %>% group_by(date, country) %>%
         ## total to date by country
-        summarise(Total=sum(cumulative_cases)) %>% ungroup() %>%
+        summarise(Total=sum(cumulative_cases), .groups='drop_last') %>% ungroup() %>%
         arrange(country) %>% group_by(country) %>%
         ## get the delta of new cases (discrete derivative) 
         mutate(new_cases = c(0, diff(Total))) %>% ungroup()

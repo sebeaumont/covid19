@@ -1,0 +1,13 @@
+name: covid19
+title: covid19
+username:
+account: datalligator
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2410058
+bundleId: 3244383
+url: https://datalligator.shinyapps.io/covid19/
+when: 1591650056.07842
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|concordance.db|cov19-growth.png
