@@ -27,4 +27,4 @@ countries <- c("US", "Russia", "United Kingdom", "Germany", "Italy", "Poland", "
 
 s7 <- s6 %>% filter(country %in% countries, date > starting_date)
 
-plotter(plot_confirmed_cases_growth(s7))
+plotter(plot_confirmed_cases_growth(s7, 0.5))

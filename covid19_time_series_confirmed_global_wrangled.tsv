@@ -137,6 +137,7 @@ date	country	Total	new_cases
 2020-06-05	Afghanistan	18969	915
 2020-06-06	Afghanistan	19551	582
 2020-06-07	Afghanistan	20342	791
+2020-06-08	Afghanistan	20917	575
 2020-01-22	Albania	0	0
 2020-01-23	Albania	0	0
 2020-01-24	Albania	0	0
@@ -275,6 +276,7 @@ date	country	Total	new_cases
 2020-06-05	Albania	1212	15
 2020-06-06	Albania	1232	20
 2020-06-07	Albania	1246	14
+2020-06-08	Albania	1263	17
 2020-01-22	Algeria	0	0
 2020-01-23	Algeria	0	0
 2020-01-24	Algeria	0	0
@@ -413,6 +415,7 @@ date	country	Total	new_cases
 2020-06-05	Algeria	9935	104
 2020-06-06	Algeria	10050	115
 2020-06-07	Algeria	10154	104
+2020-06-08	Algeria	10265	111
 2020-01-22	Andorra	0	0
 2020-01-23	Andorra	0	0
 2020-01-24	Andorra	0	0
@@ -551,6 +554,7 @@ date	country	Total	new_cases
 2020-06-05	Andorra	852	0
 2020-06-06	Andorra	852	0
 2020-06-07	Andorra	852	0
+2020-06-08	Andorra	852	0
 2020-01-22	Angola	0	0
 2020-01-23	Angola	0	0
 2020-01-24	Angola	0	0
@@ -689,6 +693,7 @@ date	country	Total	new_cases
 2020-06-05	Angola	86	0
 2020-06-06	Angola	88	2
 2020-06-07	Angola	91	3
+2020-06-08	Angola	92	1
 2020-01-22	Antigua and Barbuda	0	0
 2020-01-23	Antigua and Barbuda	0	0
 2020-01-24	Antigua and Barbuda	0	0
@@ -827,6 +832,7 @@ date	country	Total	new_cases
 2020-06-05	Antigua and Barbuda	26	0
 2020-06-06	Antigua and Barbuda	26	0
 2020-06-07	Antigua and Barbuda	26	0
+2020-06-08	Antigua and Barbuda	26	0
 2020-01-22	Argentina	0	0
 2020-01-23	Argentina	0	0
 2020-01-24	Argentina	0	0
@@ -965,6 +971,7 @@ date	country	Total	new_cases
 2020-06-05	Argentina	21037	840
 2020-06-06	Argentina	22020	983
 2020-06-07	Argentina	22794	774
+2020-06-08	Argentina	23620	826
 2020-01-22	Armenia	0	0
 2020-01-23	Armenia	0	0
 2020-01-24	Armenia	0	0
@@ -1103,6 +1110,7 @@ date	country	Total	new_cases
 2020-06-05	Armenia	11817	596
 2020-06-06	Armenia	12364	547
 2020-06-07	Armenia	13130	766
+2020-06-08	Armenia	13325	195
 2020-01-22	Australia	0	0
 2020-01-23	Australia	0	0
 2020-01-24	Australia	0	0
@@ -1241,6 +1249,7 @@ date	country	Total	new_cases
 2020-06-05	Australia	7252	5
 2020-06-06	Australia	7259	7
 2020-06-07	Australia	7265	6
+2020-06-08	Australia	7267	2
 2020-01-22	Austria	0	0
 2020-01-23	Austria	0	0
 2020-01-24	Austria	0	0
@@ -1379,6 +1388,7 @@ date	country	Total	new_cases
 2020-06-05	Austria	16843	38
 2020-06-06	Austria	16898	55
 2020-06-07	Austria	16902	4
+2020-06-08	Austria	16968	66
 2020-01-22	Azerbaijan	0	0
 2020-01-23	Azerbaijan	0	0
 2020-01-24	Azerbaijan	0	0
@@ -1517,6 +1527,7 @@ date	country	Total	new_cases
 2020-06-05	Azerbaijan	6860	338
 2020-06-06	Azerbaijan	7239	379
 2020-06-07	Azerbaijan	7553	314
+2020-06-08	Azerbaijan	7876	323
 2020-01-22	Bahamas	0	0
 2020-01-23	Bahamas	0	0
 2020-01-24	Bahamas	0	0
@@ -1655,6 +1666,7 @@ date	country	Total	new_cases
 2020-06-05	Bahamas	102	0
 2020-06-06	Bahamas	103	1
 2020-06-07	Bahamas	103	0
+2020-06-08	Bahamas	103	0
 2020-01-22	Bahrain	0	0
 2020-01-23	Bahrain	0	0
 2020-01-24	Bahrain	0	0
@@ -1793,6 +1805,7 @@ date	country	Total	new_cases
 2020-06-05	Bahrain	13835	539
 2020-06-06	Bahrain	14383	548
 2020-06-07	Bahrain	14763	380
+2020-06-08	Bahrain	15417	654
 2020-01-22	Bangladesh	0	0
 2020-01-23	Bangladesh	0	0
 2020-01-24	Bangladesh	0	0
@@ -1931,6 +1944,7 @@ date	country	Total	new_cases
 2020-06-05	Bangladesh	60391	2828
 2020-06-06	Bangladesh	63026	2635
 2020-06-07	Bangladesh	65769	2743
+2020-06-08	Bangladesh	68504	2735
 2020-01-22	Barbados	0	0
 2020-01-23	Barbados	0	0
 2020-01-24	Barbados	0	0
@@ -2069,6 +2083,7 @@ date	country	Total	new_cases
 2020-06-05	Barbados	92	0
 2020-06-06	Barbados	92	0
 2020-06-07	Barbados	92	0
+2020-06-08	Barbados	92	0
 2020-01-22	Belarus	0	0
 2020-01-23	Belarus	0	0
 2020-01-24	Belarus	0	0
@@ -2207,6 +2222,7 @@ date	country	Total	new_cases
 2020-06-05	Belarus	46868	887
 2020-06-06	Belarus	47751	883
 2020-06-07	Belarus	48630	879
+2020-06-08	Belarus	49453	823
 2020-01-22	Belgium	0	0
 2020-01-23	Belgium	0	0
 2020-01-24	Belgium	0	0
@@ -2345,6 +2361,7 @@ date	country	Total	new_cases
 2020-06-05	Belgium	58907	140
 2020-06-06	Belgium	59072	165
 2020-06-07	Belgium	59226	154
+2020-06-08	Belgium	59348	122
 2020-01-22	Belize	0	0
 2020-01-23	Belize	0	0
 2020-01-24	Belize	0	0
@@ -2483,6 +2500,7 @@ date	country	Total	new_cases
 2020-06-05	Belize	19	1
 2020-06-06	Belize	19	0
 2020-06-07	Belize	19	0
+2020-06-08	Belize	19	0
 2020-01-22	Benin	0	0
 2020-01-23	Benin	0	0
 2020-01-24	Benin	0	0
@@ -2621,6 +2639,7 @@ date	country	Total	new_cases
 2020-06-05	Benin	261	0
 2020-06-06	Benin	261	0
 2020-06-07	Benin	261	0
+2020-06-08	Benin	288	27
 2020-01-22	Bhutan	0	0
 2020-01-23	Bhutan	0	0
 2020-01-24	Bhutan	0	0
@@ -2759,6 +2778,7 @@ date	country	Total	new_cases
 2020-06-05	Bhutan	48	1
 2020-06-06	Bhutan	48	0
 2020-06-07	Bhutan	59	11
+2020-06-08	Bhutan	59	0
 2020-01-22	Bolivia	0	0
 2020-01-23	Bolivia	0	0
 2020-01-24	Bolivia	0	0
@@ -2897,6 +2917,7 @@ date	country	Total	new_cases
 2020-06-05	Bolivia	12728	483
 2020-06-06	Bolivia	13358	630
 2020-06-07	Bolivia	13643	285
+2020-06-08	Bolivia	13949	306
 2020-01-22	Bosnia and Herzegovina	0	0
 2020-01-23	Bosnia and Herzegovina	0	0
 2020-01-24	Bosnia and Herzegovina	0	0
@@ -3035,6 +3056,7 @@ date	country	Total	new_cases
 2020-06-05	Bosnia and Herzegovina	2606	12
 2020-06-06	Bosnia and Herzegovina	2606	0
 2020-06-07	Bosnia and Herzegovina	2606	0
+2020-06-08	Bosnia and Herzegovina	2704	98
 2020-01-22	Botswana	0	0
 2020-01-23	Botswana	0	0
 2020-01-24	Botswana	0	0
@@ -3173,6 +3195,7 @@ date	country	Total	new_cases
 2020-06-05	Botswana	40	0
 2020-06-06	Botswana	40	0
 2020-06-07	Botswana	40	0
+2020-06-08	Botswana	42	2
 2020-01-22	Brazil	0	0
 2020-01-23	Brazil	0	0
 2020-01-24	Brazil	0	0
@@ -3311,6 +3334,7 @@ date	country	Total	new_cases
 2020-06-05	Brazil	645771	30830
 2020-06-06	Brazil	672846	27075
 2020-06-07	Brazil	691758	18912
+2020-06-08	Brazil	707412	15654
 2020-01-22	Brunei	0	0
 2020-01-23	Brunei	0	0
 2020-01-24	Brunei	0	0
@@ -3449,6 +3473,7 @@ date	country	Total	new_cases
 2020-06-05	Brunei	141	0
 2020-06-06	Brunei	141	0
 2020-06-07	Brunei	141	0
+2020-06-08	Brunei	141	0
 2020-01-22	Bulgaria	0	0
 2020-01-23	Bulgaria	0	0
 2020-01-24	Bulgaria	0	0
@@ -3587,6 +3612,7 @@ date	country	Total	new_cases
 2020-06-05	Bulgaria	2627	42
 2020-06-06	Bulgaria	2711	84
 2020-06-07	Bulgaria	2727	16
+2020-06-08	Bulgaria	2810	83
 2020-01-22	Burkina Faso	0	0
 2020-01-23	Burkina Faso	0	0
 2020-01-24	Burkina Faso	0	0
@@ -3725,6 +3751,7 @@ date	country	Total	new_cases
 2020-06-05	Burkina Faso	888	3
 2020-06-06	Burkina Faso	888	0
 2020-06-07	Burkina Faso	889	1
+2020-06-08	Burkina Faso	890	1
 2020-01-22	Burma	0	0
 2020-01-23	Burma	0	0
 2020-01-24	Burma	0	0
@@ -3863,6 +3890,7 @@ date	country	Total	new_cases
 2020-06-05	Burma	236	0
 2020-06-06	Burma	240	4
 2020-06-07	Burma	242	2
+2020-06-08	Burma	244	2
 2020-01-22	Burundi	0	0
 2020-01-23	Burundi	0	0
 2020-01-24	Burundi	0	0
@@ -4001,6 +4029,7 @@ date	country	Total	new_cases
 2020-06-05	Burundi	63	0
 2020-06-06	Burundi	83	20
 2020-06-07	Burundi	83	0
+2020-06-08	Burundi	83	0
 2020-01-22	Cabo Verde	0	0
 2020-01-23	Cabo Verde	0	0
 2020-01-24	Cabo Verde	0	0
@@ -4139,6 +4168,7 @@ date	country	Total	new_cases
 2020-06-05	Cabo Verde	536	34
 2020-06-06	Cabo Verde	542	6
 2020-06-07	Cabo Verde	554	12
+2020-06-08	Cabo Verde	567	13
 2020-01-22	Cambodia	0	0
 2020-01-23	Cambodia	0	0
 2020-01-24	Cambodia	0	0
@@ -4277,6 +4307,7 @@ date	country	Total	new_cases
 2020-06-05	Cambodia	125	0
 2020-06-06	Cambodia	125	0
 2020-06-07	Cambodia	126	1
+2020-06-08	Cambodia	126	0
 2020-01-22	Cameroon	0	0
 2020-01-23	Cameroon	0	0
 2020-01-24	Cameroon	0	0
@@ -4415,6 +4446,7 @@ date	country	Total	new_cases
 2020-06-05	Cameroon	7392	603
 2020-06-06	Cameroon	7599	207
 2020-06-07	Cameroon	7908	309
+2020-06-08	Cameroon	8060	152
 2020-01-22	Canada	0	0
 2020-01-23	Canada	0	0
 2020-01-24	Canada	0	0
@@ -4553,6 +4585,7 @@ date	country	Total	new_cases
 2020-06-05	Canada	95947	678
 2020-06-06	Canada	96475	528
 2020-06-07	Canada	97178	703
+2020-06-08	Canada	97779	601
 2020-01-22	Central African Republic	0	0
 2020-01-23	Central African Republic	0	0
 2020-01-24	Central African Republic	0	0
@@ -4691,6 +4724,7 @@ date	country	Total	new_cases
 2020-06-05	Central African Republic	1451	163
 2020-06-06	Central African Republic	1570	119
 2020-06-07	Central African Republic	1634	64
+2020-06-08	Central African Republic	1850	216
 2020-01-22	Chad	0	0
 2020-01-23	Chad	0	0
 2020-01-24	Chad	0	0
@@ -4829,6 +4863,7 @@ date	country	Total	new_cases
 2020-06-05	Chad	836	8
 2020-06-06	Chad	836	0
 2020-06-07	Chad	837	1
+2020-06-08	Chad	839	2
 2020-01-22	Chile	0	0
 2020-01-23	Chile	0	0
 2020-01-24	Chile	0	0
@@ -4967,6 +5002,7 @@ date	country	Total	new_cases
 2020-06-05	Chile	122499	4207
 2020-06-06	Chile	127745	5246
 2020-06-07	Chile	134150	6405
+2020-06-08	Chile	138846	4696
 2020-01-22	China	548	0
 2020-01-23	China	643	95
 2020-01-24	China	920	277
@@ -5105,6 +5141,7 @@ date	country	Total	new_cases
 2020-06-05	China	84177	6
 2020-06-06	China	84186	9
 2020-06-07	China	84191	5
+2020-06-08	China	84195	4
 2020-01-22	Colombia	0	0
 2020-01-23	Colombia	0	0
 2020-01-24	Colombia	0	0
@@ -5243,6 +5280,7 @@ date	country	Total	new_cases
 2020-06-05	Colombia	36759	3293
 2020-06-06	Colombia	36759	0
 2020-06-07	Colombia	38149	1390
+2020-06-08	Colombia	40847	2698
 2020-01-22	Comoros	0	0
 2020-01-23	Comoros	0	0
 2020-01-24	Comoros	0	0
@@ -5381,6 +5419,7 @@ date	country	Total	new_cases
 2020-06-05	Comoros	132	0
 2020-06-06	Comoros	141	9
 2020-06-07	Comoros	141	0
+2020-06-08	Comoros	141	0
 2020-01-22	Congo (Brazzaville)	0	0
 2020-01-23	Congo (Brazzaville)	0	0
 2020-01-24	Congo (Brazzaville)	0	0
@@ -5519,6 +5558,7 @@ date	country	Total	new_cases
 2020-06-05	Congo (Brazzaville)	635	24
 2020-06-06	Congo (Brazzaville)	683	48
 2020-06-07	Congo (Brazzaville)	683	0
+2020-06-08	Congo (Brazzaville)	683	0
 2020-01-22	Congo (Kinshasa)	0	0
 2020-01-23	Congo (Kinshasa)	0	0
 2020-01-24	Congo (Kinshasa)	0	0
@@ -5657,6 +5697,7 @@ date	country	Total	new_cases
 2020-06-05	Congo (Kinshasa)	3764	120
 2020-06-06	Congo (Kinshasa)	3878	114
 2020-06-07	Congo (Kinshasa)	4016	138
+2020-06-08	Congo (Kinshasa)	4106	90
 2020-01-22	Costa Rica	0	0
 2020-01-23	Costa Rica	0	0
 2020-01-24	Costa Rica	0	0
@@ -5795,6 +5836,7 @@ date	country	Total	new_cases
 2020-06-05	Costa Rica	1228	34
 2020-06-06	Costa Rica	1263	35
 2020-06-07	Costa Rica	1318	55
+2020-06-08	Costa Rica	1342	24
 2020-01-22	Cote d'Ivoire	0	0
 2020-01-23	Cote d'Ivoire	0	0
 2020-01-24	Cote d'Ivoire	0	0
@@ -5933,6 +5975,7 @@ date	country	Total	new_cases
 2020-06-05	Cote d'Ivoire	3431	169
 2020-06-06	Cote d'Ivoire	3557	126
 2020-06-07	Cote d'Ivoire	3739	182
+2020-06-08	Cote d'Ivoire	3881	142
 2020-01-22	Croatia	0	0
 2020-01-23	Croatia	0	0
 2020-01-24	Croatia	0	0
@@ -6071,6 +6114,7 @@ date	country	Total	new_cases
 2020-06-05	Croatia	2247	0
 2020-06-06	Croatia	2247	0
 2020-06-07	Croatia	2247	0
+2020-06-08	Croatia	2247	0
 2020-01-22	Cuba	0	0
 2020-01-23	Cuba	0	0
 2020-01-24	Cuba	0	0
@@ -6209,6 +6253,7 @@ date	country	Total	new_cases
 2020-06-05	Cuba	2133	14
 2020-06-06	Cuba	2173	40
 2020-06-07	Cuba	2191	18
+2020-06-08	Cuba	2200	9
 2020-01-22	Cyprus	0	0
 2020-01-23	Cyprus	0	0
 2020-01-24	Cyprus	0	0
@@ -6347,6 +6392,7 @@ date	country	Total	new_cases
 2020-06-05	Cyprus	960	2
 2020-06-06	Cyprus	960	0
 2020-06-07	Cyprus	964	4
+2020-06-08	Cyprus	970	6
 2020-01-22	Czechia	0	0
 2020-01-23	Czechia	0	0
 2020-01-24	Czechia	0	0
@@ -6485,6 +6531,7 @@ date	country	Total	new_cases
 2020-06-05	Czechia	9529	35
 2020-06-06	Czechia	9567	38
 2020-06-07	Czechia	9628	61
+2020-06-08	Czechia	9697	69
 2020-01-22	Denmark	0	0
 2020-01-23	Denmark	0	0
 2020-01-24	Denmark	0	0
@@ -6623,6 +6670,7 @@ date	country	Total	new_cases
 2020-06-05	Denmark	12075	64
 2020-06-06	Denmark	12124	49
 2020-06-07	Denmark	12148	24
+2020-06-08	Denmark	12162	14
 2020-01-22	Diamond Princess	0	0
 2020-01-23	Diamond Princess	0	0
 2020-01-24	Diamond Princess	0	0
@@ -6761,6 +6809,7 @@ date	country	Total	new_cases
 2020-06-05	Diamond Princess	712	0
 2020-06-06	Diamond Princess	712	0
 2020-06-07	Diamond Princess	712	0
+2020-06-08	Diamond Princess	712	0
 2020-01-22	Djibouti	0	0
 2020-01-23	Djibouti	0	0
 2020-01-24	Djibouti	0	0
@@ -6899,6 +6948,7 @@ date	country	Total	new_cases
 2020-06-05	Djibouti	4123	69
 2020-06-06	Djibouti	4169	46
 2020-06-07	Djibouti	4207	38
+2020-06-08	Djibouti	4278	71
 2020-01-22	Dominica	0	0
 2020-01-23	Dominica	0	0
 2020-01-24	Dominica	0	0
@@ -7037,6 +7087,7 @@ date	country	Total	new_cases
 2020-06-05	Dominica	18	0
 2020-06-06	Dominica	18	0
 2020-06-07	Dominica	18	0
+2020-06-08	Dominica	18	0
 2020-01-22	Dominican Republic	0	0
 2020-01-23	Dominican Republic	0	0
 2020-01-24	Dominican Republic	0	0
@@ -7175,6 +7226,7 @@ date	country	Total	new_cases
 2020-06-05	Dominican Republic	18708	389
 2020-06-06	Dominican Republic	19195	487
 2020-06-07	Dominican Republic	19600	405
+2020-06-08	Dominican Republic	20126	526
 2020-01-22	Ecuador	0	0
 2020-01-23	Ecuador	0	0
 2020-01-24	Ecuador	0	0
@@ -7313,6 +7365,7 @@ date	country	Total	new_cases
 2020-06-05	Ecuador	41575	609
 2020-06-06	Ecuador	42728	1153
 2020-06-07	Ecuador	43120	392
+2020-06-08	Ecuador	43378	258
 2020-01-22	Egypt	0	0
 2020-01-23	Egypt	0	0
 2020-01-24	Egypt	0	0
@@ -7451,6 +7504,7 @@ date	country	Total	new_cases
 2020-06-05	Egypt	31115	1348
 2020-06-06	Egypt	32612	1497
 2020-06-07	Egypt	34079	1467
+2020-06-08	Egypt	35444	1365
 2020-01-22	El Salvador	0	0
 2020-01-23	El Salvador	0	0
 2020-01-24	El Salvador	0	0
@@ -7589,6 +7643,7 @@ date	country	Total	new_cases
 2020-06-05	El Salvador	2849	68
 2020-06-06	El Salvador	2934	85
 2020-06-07	El Salvador	3015	81
+2020-06-08	El Salvador	3104	89
 2020-01-22	Equatorial Guinea	0	0
 2020-01-23	Equatorial Guinea	0	0
 2020-01-24	Equatorial Guinea	0	0
@@ -7727,6 +7782,7 @@ date	country	Total	new_cases
 2020-06-05	Equatorial Guinea	1306	0
 2020-06-06	Equatorial Guinea	1306	0
 2020-06-07	Equatorial Guinea	1306	0
+2020-06-08	Equatorial Guinea	1306	0
 2020-01-22	Eritrea	0	0
 2020-01-23	Eritrea	0	0
 2020-01-24	Eritrea	0	0
@@ -7865,6 +7921,7 @@ date	country	Total	new_cases
 2020-06-05	Eritrea	39	0
 2020-06-06	Eritrea	39	0
 2020-06-07	Eritrea	39	0
+2020-06-08	Eritrea	39	0
 2020-01-22	Estonia	0	0
 2020-01-23	Estonia	0	0
 2020-01-24	Estonia	0	0
@@ -8003,6 +8060,7 @@ date	country	Total	new_cases
 2020-06-05	Estonia	1910	20
 2020-06-06	Estonia	1931	21
 2020-06-07	Estonia	1939	8
+2020-06-08	Estonia	1940	1
 2020-01-22	Eswatini	0	0
 2020-01-23	Eswatini	0	0
 2020-01-24	Eswatini	0	0
@@ -8141,6 +8199,7 @@ date	country	Total	new_cases
 2020-06-05	Eswatini	305	5
 2020-06-06	Eswatini	322	17
 2020-06-07	Eswatini	333	11
+2020-06-08	Eswatini	340	7
 2020-01-22	Ethiopia	0	0
 2020-01-23	Ethiopia	0	0
 2020-01-24	Ethiopia	0	0
@@ -8279,6 +8338,7 @@ date	country	Total	new_cases
 2020-06-05	Ethiopia	1805	169
 2020-06-06	Ethiopia	1934	129
 2020-06-07	Ethiopia	2020	86
+2020-06-08	Ethiopia	2156	136
 2020-01-22	Fiji	0	0
 2020-01-23	Fiji	0	0
 2020-01-24	Fiji	0	0
@@ -8417,6 +8477,7 @@ date	country	Total	new_cases
 2020-06-05	Fiji	18	0
 2020-06-06	Fiji	18	0
 2020-06-07	Fiji	18	0
+2020-06-08	Fiji	18	0
 2020-01-22	Finland	0	0
 2020-01-23	Finland	0	0
 2020-01-24	Finland	0	0
@@ -8555,6 +8616,7 @@ date	country	Total	new_cases
 2020-06-05	Finland	6941	30
 2020-06-06	Finland	6964	23
 2020-06-07	Finland	6981	17
+2020-06-08	Finland	7001	20
 2020-01-22	France	0	0
 2020-01-23	France	0	0
 2020-01-24	France	2	2
@@ -8693,6 +8755,7 @@ date	country	Total	new_cases
 2020-06-05	France	190180	611
 2020-06-06	France	190759	579
 2020-06-07	France	191102	343
+2020-06-08	France	191313	211
 2020-01-22	Gabon	0	0
 2020-01-23	Gabon	0	0
 2020-01-24	Gabon	0	0
@@ -8831,6 +8894,7 @@ date	country	Total	new_cases
 2020-06-05	Gabon	3101	146
 2020-06-06	Gabon	3101	0
 2020-06-07	Gabon	3101	0
+2020-06-08	Gabon	3101	0
 2020-01-22	Gambia	0	0
 2020-01-23	Gambia	0	0
 2020-01-24	Gambia	0	0
@@ -8969,6 +9033,7 @@ date	country	Total	new_cases
 2020-06-05	Gambia	26	0
 2020-06-06	Gambia	26	0
 2020-06-07	Gambia	26	0
+2020-06-08	Gambia	28	2
 2020-01-22	Georgia	0	0
 2020-01-23	Georgia	0	0
 2020-01-24	Georgia	0	0
@@ -9107,6 +9172,7 @@ date	country	Total	new_cases
 2020-06-05	Georgia	805	4
 2020-06-06	Georgia	808	3
 2020-06-07	Georgia	809	1
+2020-06-08	Georgia	812	3
 2020-01-22	Germany	0	0
 2020-01-23	Germany	0	0
 2020-01-24	Germany	0	0
@@ -9245,6 +9311,7 @@ date	country	Total	new_cases
 2020-06-05	Germany	184924	452
 2020-06-06	Germany	185450	526
 2020-06-07	Germany	185750	300
+2020-06-08	Germany	186109	359
 2020-01-22	Ghana	0	0
 2020-01-23	Ghana	0	0
 2020-01-24	Ghana	0	0
@@ -9383,6 +9450,7 @@ date	country	Total	new_cases
 2020-06-05	Ghana	9168	283
 2020-06-06	Ghana	9462	294
 2020-06-07	Ghana	9638	176
+2020-06-08	Ghana	9910	272
 2020-01-22	Greece	0	0
 2020-01-23	Greece	0	0
 2020-01-24	Greece	0	0
@@ -9521,6 +9589,7 @@ date	country	Total	new_cases
 2020-06-05	Greece	2967	15
 2020-06-06	Greece	2980	13
 2020-06-07	Greece	2997	17
+2020-06-08	Greece	3049	52
 2020-01-22	Grenada	0	0
 2020-01-23	Grenada	0	0
 2020-01-24	Grenada	0	0
@@ -9659,6 +9728,7 @@ date	country	Total	new_cases
 2020-06-05	Grenada	23	0
 2020-06-06	Grenada	23	0
 2020-06-07	Grenada	23	0
+2020-06-08	Grenada	23	0
 2020-01-22	Guatemala	0	0
 2020-01-23	Guatemala	0	0
 2020-01-24	Guatemala	0	0
@@ -9797,6 +9867,7 @@ date	country	Total	new_cases
 2020-06-05	Guatemala	6485	331
 2020-06-06	Guatemala	6792	307
 2020-06-07	Guatemala	7055	263
+2020-06-08	Guatemala	7502	447
 2020-01-22	Guinea	0	0
 2020-01-23	Guinea	0	0
 2020-01-24	Guinea	0	0
@@ -9935,6 +10006,7 @@ date	country	Total	new_cases
 2020-06-05	Guinea	4060	69
 2020-06-06	Guinea	4117	57
 2020-06-07	Guinea	4117	0
+2020-06-08	Guinea	4216	99
 2020-01-22	Guinea-Bissau	0	0
 2020-01-23	Guinea-Bissau	0	0
 2020-01-24	Guinea-Bissau	0	0
@@ -10073,6 +10145,7 @@ date	country	Total	new_cases
 2020-06-05	Guinea-Bissau	1368	29
 2020-06-06	Guinea-Bissau	1368	0
 2020-06-07	Guinea-Bissau	1368	0
+2020-06-08	Guinea-Bissau	1389	21
 2020-01-22	Guyana	0	0
 2020-01-23	Guyana	0	0
 2020-01-24	Guyana	0	0
@@ -10211,6 +10284,7 @@ date	country	Total	new_cases
 2020-06-05	Guyana	153	0
 2020-06-06	Guyana	154	1
 2020-06-07	Guyana	154	0
+2020-06-08	Guyana	154	0
 2020-01-22	Haiti	0	0
 2020-01-23	Haiti	0	0
 2020-01-24	Haiti	0	0
@@ -10349,6 +10423,7 @@ date	country	Total	new_cases
 2020-06-05	Haiti	2740	100
 2020-06-06	Haiti	3072	332
 2020-06-07	Haiti	3334	262
+2020-06-08	Haiti	3538	204
 2020-01-22	Holy See	0	0
 2020-01-23	Holy See	0	0
 2020-01-24	Holy See	0	0
@@ -10487,6 +10562,7 @@ date	country	Total	new_cases
 2020-06-05	Holy See	12	0
 2020-06-06	Holy See	12	0
 2020-06-07	Holy See	12	0
+2020-06-08	Holy See	12	0
 2020-01-22	Honduras	0	0
 2020-01-23	Honduras	0	0
 2020-01-24	Honduras	0	0
@@ -10625,6 +10701,7 @@ date	country	Total	new_cases
 2020-06-05	Honduras	5971	91
 2020-06-06	Honduras	6155	184
 2020-06-07	Honduras	6327	172
+2020-06-08	Honduras	6450	123
 2020-01-22	Hungary	0	0
 2020-01-23	Hungary	0	0
 2020-01-24	Hungary	0	0
@@ -10763,6 +10840,7 @@ date	country	Total	new_cases
 2020-06-05	Hungary	3970	16
 2020-06-06	Hungary	3990	20
 2020-06-07	Hungary	4008	18
+2020-06-08	Hungary	4014	6
 2020-01-22	Iceland	0	0
 2020-01-23	Iceland	0	0
 2020-01-24	Iceland	0	0
@@ -10901,6 +10979,7 @@ date	country	Total	new_cases
 2020-06-05	Iceland	1806	0
 2020-06-06	Iceland	1806	0
 2020-06-07	Iceland	1807	1
+2020-06-08	Iceland	1807	0
 2020-01-22	India	0	0
 2020-01-23	India	0	0
 2020-01-24	India	0	0
@@ -11039,6 +11118,7 @@ date	country	Total	new_cases
 2020-06-05	India	236184	9471
 2020-06-06	India	246622	10438
 2020-06-07	India	257486	10864
+2020-06-08	India	265928	8442
 2020-01-22	Indonesia	0	0
 2020-01-23	Indonesia	0	0
 2020-01-24	Indonesia	0	0
@@ -11177,6 +11257,7 @@ date	country	Total	new_cases
 2020-06-05	Indonesia	29521	703
 2020-06-06	Indonesia	30514	993
 2020-06-07	Indonesia	31186	672
+2020-06-08	Indonesia	32033	847
 2020-01-22	Iran	0	0
 2020-01-23	Iran	0	0
 2020-01-24	Iran	0	0
@@ -11315,6 +11396,7 @@ date	country	Total	new_cases
 2020-06-05	Iran	167156	2886
 2020-06-06	Iran	169425	2269
 2020-06-07	Iran	171789	2364
+2020-06-08	Iran	173832	2043
 2020-01-22	Iraq	0	0
 2020-01-23	Iraq	0	0
 2020-01-24	Iraq	0	0
@@ -11453,6 +11535,7 @@ date	country	Total	new_cases
 2020-06-05	Iraq	9846	1006
 2020-06-06	Iraq	11098	1252
 2020-06-07	Iraq	12366	1268
+2020-06-08	Iraq	13481	1115
 2020-01-22	Ireland	0	0
 2020-01-23	Ireland	0	0
 2020-01-24	Ireland	0	0
@@ -11591,6 +11674,7 @@ date	country	Total	new_cases
 2020-06-05	Ireland	25163	21
 2020-06-06	Ireland	25183	20
 2020-06-07	Ireland	25201	18
+2020-06-08	Ireland	25207	6
 2020-01-22	Israel	0	0
 2020-01-23	Israel	0	0
 2020-01-24	Israel	0	0
@@ -11729,6 +11813,7 @@ date	country	Total	new_cases
 2020-06-05	Israel	17562	67
 2020-06-06	Israel	17752	190
 2020-06-07	Israel	17863	111
+2020-06-08	Israel	18032	169
 2020-01-22	Italy	0	0
 2020-01-23	Italy	0	0
 2020-01-24	Italy	0	0
@@ -11867,6 +11952,7 @@ date	country	Total	new_cases
 2020-06-05	Italy	234531	518
 2020-06-06	Italy	234801	270
 2020-06-07	Italy	234998	197
+2020-06-08	Italy	235278	280
 2020-01-22	Jamaica	0	0
 2020-01-23	Jamaica	0	0
 2020-01-24	Jamaica	0	0
@@ -12005,6 +12091,7 @@ date	country	Total	new_cases
 2020-06-05	Jamaica	595	4
 2020-06-06	Jamaica	596	1
 2020-06-07	Jamaica	598	2
+2020-06-08	Jamaica	599	1
 2020-01-22	Japan	2	0
 2020-01-23	Japan	2	0
 2020-01-24	Japan	2	0
@@ -12143,6 +12230,7 @@ date	country	Total	new_cases
 2020-06-05	Japan	16958	47
 2020-06-06	Japan	17000	42
 2020-06-07	Japan	17039	39
+2020-06-08	Japan	17060	21
 2020-01-22	Jordan	0	0
 2020-01-23	Jordan	0	0
 2020-01-24	Jordan	0	0
@@ -12281,6 +12369,7 @@ date	country	Total	new_cases
 2020-06-05	Jordan	784	19
 2020-06-06	Jordan	795	11
 2020-06-07	Jordan	808	13
+2020-06-08	Jordan	831	23
 2020-01-22	Kazakhstan	0	0
 2020-01-23	Kazakhstan	0	0
 2020-01-24	Kazakhstan	0	0
@@ -12419,6 +12508,7 @@ date	country	Total	new_cases
 2020-06-05	Kazakhstan	12312	245
 2020-06-06	Kazakhstan	12511	199
 2020-06-07	Kazakhstan	12694	183
+2020-06-08	Kazakhstan	12859	165
 2020-01-22	Kenya	0	0
 2020-01-23	Kenya	0	0
 2020-01-24	Kenya	0	0
@@ -12557,6 +12647,7 @@ date	country	Total	new_cases
 2020-06-05	Kenya	2474	134
 2020-06-06	Kenya	2600	126
 2020-06-07	Kenya	2767	167
+2020-06-08	Kenya	2872	105
 2020-01-22	Korea, South	1	0
 2020-01-23	Korea, South	1	0
 2020-01-24	Korea, South	2	1
@@ -12695,6 +12786,7 @@ date	country	Total	new_cases
 2020-06-05	Korea, South	11719	51
 2020-06-06	Korea, South	11776	57
 2020-06-07	Korea, South	11814	38
+2020-06-08	Korea, South	11852	38
 2020-01-22	Kosovo	0	0
 2020-01-23	Kosovo	0	0
 2020-01-24	Kosovo	0	0
@@ -12833,6 +12925,7 @@ date	country	Total	new_cases
 2020-06-05	Kosovo	1142	0
 2020-06-06	Kosovo	1142	0
 2020-06-07	Kosovo	1142	0
+2020-06-08	Kosovo	1263	121
 2020-01-22	Kuwait	0	0
 2020-01-23	Kuwait	0	0
 2020-01-24	Kuwait	0	0
@@ -12971,6 +13064,7 @@ date	country	Total	new_cases
 2020-06-05	Kuwait	30644	723
 2020-06-06	Kuwait	31131	487
 2020-06-07	Kuwait	31848	717
+2020-06-08	Kuwait	32510	662
 2020-01-22	Kyrgyzstan	0	0
 2020-01-23	Kyrgyzstan	0	0
 2020-01-24	Kyrgyzstan	0	0
@@ -13109,6 +13203,7 @@ date	country	Total	new_cases
 2020-06-05	Kyrgyzstan	1936	37
 2020-06-06	Kyrgyzstan	1974	38
 2020-06-07	Kyrgyzstan	2007	33
+2020-06-08	Kyrgyzstan	2032	25
 2020-01-22	Laos	0	0
 2020-01-23	Laos	0	0
 2020-01-24	Laos	0	0
@@ -13247,6 +13342,7 @@ date	country	Total	new_cases
 2020-06-05	Laos	19	0
 2020-06-06	Laos	19	0
 2020-06-07	Laos	19	0
+2020-06-08	Laos	19	0
 2020-01-22	Latvia	0	0
 2020-01-23	Latvia	0	0
 2020-01-24	Latvia	0	0
@@ -13385,6 +13481,7 @@ date	country	Total	new_cases
 2020-06-05	Latvia	1085	3
 2020-06-06	Latvia	1086	1
 2020-06-07	Latvia	1088	2
+2020-06-08	Latvia	1088	0
 2020-01-22	Lebanon	0	0
 2020-01-23	Lebanon	0	0
 2020-01-24	Lebanon	0	0
@@ -13523,6 +13620,7 @@ date	country	Total	new_cases
 2020-06-05	Lebanon	1312	6
 2020-06-06	Lebanon	1320	8
 2020-06-07	Lebanon	1331	11
+2020-06-08	Lebanon	1350	19
 2020-01-22	Lesotho	0	0
 2020-01-23	Lesotho	0	0
 2020-01-24	Lesotho	0	0
@@ -13661,6 +13759,7 @@ date	country	Total	new_cases
 2020-06-05	Lesotho	4	0
 2020-06-06	Lesotho	4	0
 2020-06-07	Lesotho	4	0
+2020-06-08	Lesotho	4	0
 2020-01-22	Liberia	0	0
 2020-01-23	Liberia	0	0
 2020-01-24	Liberia	0	0
@@ -13799,6 +13898,7 @@ date	country	Total	new_cases
 2020-06-05	Liberia	334	13
 2020-06-06	Liberia	345	11
 2020-06-07	Liberia	359	14
+2020-06-08	Liberia	370	11
 2020-01-22	Libya	0	0
 2020-01-23	Libya	0	0
 2020-01-24	Libya	0	0
@@ -13937,6 +14037,7 @@ date	country	Total	new_cases
 2020-06-05	Libya	239	30
 2020-06-06	Libya	256	17
 2020-06-07	Libya	256	0
+2020-06-08	Libya	332	76
 2020-01-22	Liechtenstein	0	0
 2020-01-23	Liechtenstein	0	0
 2020-01-24	Liechtenstein	0	0
@@ -14075,6 +14176,7 @@ date	country	Total	new_cases
 2020-06-05	Liechtenstein	82	0
 2020-06-06	Liechtenstein	82	0
 2020-06-07	Liechtenstein	82	0
+2020-06-08	Liechtenstein	82	0
 2020-01-22	Lithuania	0	0
 2020-01-23	Lithuania	0	0
 2020-01-24	Lithuania	0	0
@@ -14213,6 +14315,7 @@ date	country	Total	new_cases
 2020-06-05	Lithuania	1694	7
 2020-06-06	Lithuania	1705	11
 2020-06-07	Lithuania	1714	9
+2020-06-08	Lithuania	1720	6
 2020-01-22	Luxembourg	0	0
 2020-01-23	Luxembourg	0	0
 2020-01-24	Luxembourg	0	0
@@ -14351,6 +14454,7 @@ date	country	Total	new_cases
 2020-06-05	Luxembourg	4032	5
 2020-06-06	Luxembourg	4035	3
 2020-06-07	Luxembourg	4039	4
+2020-06-08	Luxembourg	4040	1
 2020-01-22	Madagascar	0	0
 2020-01-23	Madagascar	0	0
 2020-01-24	Madagascar	0	0
@@ -14489,6 +14593,7 @@ date	country	Total	new_cases
 2020-06-05	Madagascar	975	18
 2020-06-06	Madagascar	1026	51
 2020-06-07	Madagascar	1052	26
+2020-06-08	Madagascar	1094	42
 2020-01-22	Malawi	0	0
 2020-01-23	Malawi	0	0
 2020-01-24	Malawi	0	0
@@ -14627,6 +14732,7 @@ date	country	Total	new_cases
 2020-06-05	Malawi	409	16
 2020-06-06	Malawi	409	0
 2020-06-07	Malawi	438	29
+2020-06-08	Malawi	443	5
 2020-01-22	Malaysia	0	0
 2020-01-23	Malaysia	0	0
 2020-01-24	Malaysia	0	0
@@ -14765,6 +14871,7 @@ date	country	Total	new_cases
 2020-06-05	Malaysia	8266	19
 2020-06-06	Malaysia	8303	37
 2020-06-07	Malaysia	8322	19
+2020-06-08	Malaysia	8329	7
 2020-01-22	Maldives	0	0
 2020-01-23	Maldives	0	0
 2020-01-24	Maldives	0	0
@@ -14903,6 +15010,7 @@ date	country	Total	new_cases
 2020-06-05	Maldives	1883	11
 2020-06-06	Maldives	1901	18
 2020-06-07	Maldives	1903	2
+2020-06-08	Maldives	1916	13
 2020-01-22	Mali	0	0
 2020-01-23	Mali	0	0
 2020-01-24	Mali	0	0
@@ -15041,6 +15149,7 @@ date	country	Total	new_cases
 2020-06-05	Mali	1485	24
 2020-06-06	Mali	1523	38
 2020-06-07	Mali	1533	10
+2020-06-08	Mali	1547	14
 2020-01-22	Malta	0	0
 2020-01-23	Malta	0	0
 2020-01-24	Malta	0	0
@@ -15179,6 +15288,7 @@ date	country	Total	new_cases
 2020-06-05	Malta	625	3
 2020-06-06	Malta	627	2
 2020-06-07	Malta	629	2
+2020-06-08	Malta	630	1
 2020-01-22	Mauritania	0	0
 2020-01-23	Mauritania	0	0
 2020-01-24	Mauritania	0	0
@@ -15317,6 +15427,7 @@ date	country	Total	new_cases
 2020-06-05	Mauritania	883	99
 2020-06-06	Mauritania	947	64
 2020-06-07	Mauritania	1049	102
+2020-06-08	Mauritania	1104	55
 2020-01-22	Mauritius	0	0
 2020-01-23	Mauritius	0	0
 2020-01-24	Mauritius	0	0
@@ -15455,6 +15566,7 @@ date	country	Total	new_cases
 2020-06-05	Mauritius	337	2
 2020-06-06	Mauritius	337	0
 2020-06-07	Mauritius	337	0
+2020-06-08	Mauritius	337	0
 2020-01-22	Mexico	0	0
 2020-01-23	Mexico	0	0
 2020-01-24	Mexico	0	0
@@ -15593,6 +15705,7 @@ date	country	Total	new_cases
 2020-06-05	Mexico	110026	4346
 2020-06-06	Mexico	113619	3593
 2020-06-07	Mexico	117103	3484
+2020-06-08	Mexico	120102	2999
 2020-01-22	Moldova	0	0
 2020-01-23	Moldova	0	0
 2020-01-24	Moldova	0	0
@@ -15731,6 +15844,7 @@ date	country	Total	new_cases
 2020-06-05	Moldova	9247	229
 2020-06-06	Moldova	9511	264
 2020-06-07	Moldova	9700	189
+2020-06-08	Moldova	9807	107
 2020-01-22	Monaco	0	0
 2020-01-23	Monaco	0	0
 2020-01-24	Monaco	0	0
@@ -15869,6 +15983,7 @@ date	country	Total	new_cases
 2020-06-05	Monaco	99	0
 2020-06-06	Monaco	99	0
 2020-06-07	Monaco	99	0
+2020-06-08	Monaco	99	0
 2020-01-22	Mongolia	0	0
 2020-01-23	Mongolia	0	0
 2020-01-24	Mongolia	0	0
@@ -16007,6 +16122,7 @@ date	country	Total	new_cases
 2020-06-05	Mongolia	191	5
 2020-06-06	Mongolia	193	2
 2020-06-07	Mongolia	193	0
+2020-06-08	Mongolia	194	1
 2020-01-22	Montenegro	0	0
 2020-01-23	Montenegro	0	0
 2020-01-24	Montenegro	0	0
@@ -16145,6 +16261,7 @@ date	country	Total	new_cases
 2020-06-05	Montenegro	324	0
 2020-06-06	Montenegro	324	0
 2020-06-07	Montenegro	324	0
+2020-06-08	Montenegro	324	0
 2020-01-22	Morocco	0	0
 2020-01-23	Morocco	0	0
 2020-01-24	Morocco	0	0
@@ -16283,6 +16400,7 @@ date	country	Total	new_cases
 2020-06-05	Morocco	8071	68
 2020-06-06	Morocco	8151	80
 2020-06-07	Morocco	8224	73
+2020-06-08	Morocco	8302	78
 2020-01-22	Mozambique	0	0
 2020-01-23	Mozambique	0	0
 2020-01-24	Mozambique	0	0
@@ -16421,6 +16539,7 @@ date	country	Total	new_cases
 2020-06-05	Mozambique	354	2
 2020-06-06	Mozambique	409	55
 2020-06-07	Mozambique	424	15
+2020-06-08	Mozambique	433	9
 2020-01-22	MS Zaandam	0	0
 2020-01-23	MS Zaandam	0	0
 2020-01-24	MS Zaandam	0	0
@@ -16559,6 +16678,7 @@ date	country	Total	new_cases
 2020-06-05	MS Zaandam	9	0
 2020-06-06	MS Zaandam	9	0
 2020-06-07	MS Zaandam	9	0
+2020-06-08	MS Zaandam	9	0
 2020-01-22	Namibia	0	0
 2020-01-23	Namibia	0	0
 2020-01-24	Namibia	0	0
@@ -16697,6 +16817,7 @@ date	country	Total	new_cases
 2020-06-05	Namibia	25	0
 2020-06-06	Namibia	29	4
 2020-06-07	Namibia	29	0
+2020-06-08	Namibia	31	2
 2020-01-22	Nepal	0	0
 2020-01-23	Nepal	0	0
 2020-01-24	Nepal	0	0
@@ -16835,6 +16956,7 @@ date	country	Total	new_cases
 2020-06-05	Nepal	2912	278
 2020-06-06	Nepal	3235	323
 2020-06-07	Nepal	3448	213
+2020-06-08	Nepal	3762	314
 2020-01-22	Netherlands	0	0
 2020-01-23	Netherlands	0	0
 2020-01-24	Netherlands	0	0
@@ -16973,6 +17095,7 @@ date	country	Total	new_cases
 2020-06-05	Netherlands	47358	210
 2020-06-06	Netherlands	47541	183
 2020-06-07	Netherlands	47780	239
+2020-06-08	Netherlands	47945	165
 2020-01-22	New Zealand	0	0
 2020-01-23	New Zealand	0	0
 2020-01-24	New Zealand	0	0
@@ -17111,6 +17234,7 @@ date	country	Total	new_cases
 2020-06-05	New Zealand	1504	0
 2020-06-06	New Zealand	1504	0
 2020-06-07	New Zealand	1504	0
+2020-06-08	New Zealand	1504	0
 2020-01-22	Nicaragua	0	0
 2020-01-23	Nicaragua	0	0
 2020-01-24	Nicaragua	0	0
@@ -17249,6 +17373,7 @@ date	country	Total	new_cases
 2020-06-05	Nicaragua	1118	0
 2020-06-06	Nicaragua	1118	0
 2020-06-07	Nicaragua	1118	0
+2020-06-08	Nicaragua	1118	0
 2020-01-22	Niger	0	0
 2020-01-23	Niger	0	0
 2020-01-24	Niger	0	0
@@ -17387,6 +17512,7 @@ date	country	Total	new_cases
 2020-06-05	Niger	966	3
 2020-06-06	Niger	970	4
 2020-06-07	Niger	973	3
+2020-06-08	Niger	973	0
 2020-01-22	Nigeria	0	0
 2020-01-23	Nigeria	0	0
 2020-01-24	Nigeria	0	0
@@ -17525,6 +17651,7 @@ date	country	Total	new_cases
 2020-06-05	Nigeria	11844	328
 2020-06-06	Nigeria	12233	389
 2020-06-07	Nigeria	12486	253
+2020-06-08	Nigeria	12801	315
 2020-01-22	North Macedonia	0	0
 2020-01-23	North Macedonia	0	0
 2020-01-24	North Macedonia	0	0
@@ -17663,6 +17790,7 @@ date	country	Total	new_cases
 2020-06-05	North Macedonia	2790	179
 2020-06-06	North Macedonia	2915	125
 2020-06-07	North Macedonia	3025	110
+2020-06-08	North Macedonia	3152	127
 2020-01-22	Norway	0	0
 2020-01-23	Norway	0	0
 2020-01-24	Norway	0	0
@@ -17801,6 +17929,7 @@ date	country	Total	new_cases
 2020-06-05	Norway	8522	18
 2020-06-06	Norway	8531	9
 2020-06-07	Norway	8547	16
+2020-06-08	Norway	8561	14
 2020-01-22	Oman	0	0
 2020-01-23	Oman	0	0
 2020-01-24	Oman	0	0
@@ -17939,6 +18068,7 @@ date	country	Total	new_cases
 2020-06-05	Oman	15086	770
 2020-06-06	Oman	16016	930
 2020-06-07	Oman	16882	866
+2020-06-08	Oman	17486	604
 2020-01-22	Pakistan	0	0
 2020-01-23	Pakistan	0	0
 2020-01-24	Pakistan	0	0
@@ -18077,6 +18207,7 @@ date	country	Total	new_cases
 2020-06-05	Pakistan	89249	3985
 2020-06-06	Pakistan	93983	4734
 2020-06-07	Pakistan	98943	4960
+2020-06-08	Pakistan	108317	9374
 2020-01-22	Panama	0	0
 2020-01-23	Panama	0	0
 2020-01-24	Panama	0	0
@@ -18215,6 +18346,7 @@ date	country	Total	new_cases
 2020-06-05	Panama	15463	419
 2020-06-06	Panama	16004	541
 2020-06-07	Panama	16425	421
+2020-06-08	Panama	16854	429
 2020-01-22	Papua New Guinea	0	0
 2020-01-23	Papua New Guinea	0	0
 2020-01-24	Papua New Guinea	0	0
@@ -18353,6 +18485,7 @@ date	country	Total	new_cases
 2020-06-05	Papua New Guinea	8	0
 2020-06-06	Papua New Guinea	8	0
 2020-06-07	Papua New Guinea	8	0
+2020-06-08	Papua New Guinea	8	0
 2020-01-22	Paraguay	0	0
 2020-01-23	Paraguay	0	0
 2020-01-24	Paraguay	0	0
@@ -18491,6 +18624,7 @@ date	country	Total	new_cases
 2020-06-05	Paraguay	1087	1
 2020-06-06	Paraguay	1090	3
 2020-06-07	Paraguay	1135	45
+2020-06-08	Paraguay	1145	10
 2020-01-22	Peru	0	0
 2020-01-23	Peru	0	0
 2020-01-24	Peru	0	0
@@ -18629,6 +18763,7 @@ date	country	Total	new_cases
 2020-06-05	Peru	187400	4202
 2020-06-06	Peru	191758	4358
 2020-06-07	Peru	196515	4757
+2020-06-08	Peru	199696	3181
 2020-01-22	Philippines	0	0
 2020-01-23	Philippines	0	0
 2020-01-24	Philippines	0	0
@@ -18767,6 +18902,7 @@ date	country	Total	new_cases
 2020-06-05	Philippines	20626	244
 2020-06-06	Philippines	21340	714
 2020-06-07	Philippines	21895	555
+2020-06-08	Philippines	22474	579
 2020-01-22	Poland	0	0
 2020-01-23	Poland	0	0
 2020-01-24	Poland	0	0
@@ -18905,6 +19041,7 @@ date	country	Total	new_cases
 2020-06-05	Poland	25410	362
 2020-06-06	Poland	25986	576
 2020-06-07	Poland	26561	575
+2020-06-08	Poland	27160	599
 2020-01-22	Portugal	0	0
 2020-01-23	Portugal	0	0
 2020-01-24	Portugal	0	0
@@ -19043,6 +19180,7 @@ date	country	Total	new_cases
 2020-06-05	Portugal	33969	377
 2020-06-06	Portugal	34351	382
 2020-06-07	Portugal	34693	342
+2020-06-08	Portugal	34885	192
 2020-01-22	Qatar	0	0
 2020-01-23	Qatar	0	0
 2020-01-24	Qatar	0	0
@@ -19181,6 +19319,7 @@ date	country	Total	new_cases
 2020-06-05	Qatar	65495	1754
 2020-06-06	Qatar	67195	1700
 2020-06-07	Qatar	68790	1595
+2020-06-08	Qatar	70158	1368
 2020-01-22	Romania	0	0
 2020-01-23	Romania	0	0
 2020-01-24	Romania	0	0
@@ -19319,6 +19458,7 @@ date	country	Total	new_cases
 2020-06-05	Romania	20103	196
 2020-06-06	Romania	20290	187
 2020-06-07	Romania	20479	189
+2020-06-08	Romania	20604	125
 2020-01-22	Russia	0	0
 2020-01-23	Russia	0	0
 2020-01-24	Russia	0	0
@@ -19457,6 +19597,7 @@ date	country	Total	new_cases
 2020-06-05	Russia	449256	8718
 2020-06-06	Russia	458102	8846
 2020-06-07	Russia	467073	8971
+2020-06-08	Russia	476043	8970
 2020-01-22	Rwanda	0	0
 2020-01-23	Rwanda	0	0
 2020-01-24	Rwanda	0	0
@@ -19595,6 +19736,7 @@ date	country	Total	new_cases
 2020-06-05	Rwanda	420	10
 2020-06-06	Rwanda	431	11
 2020-06-07	Rwanda	439	8
+2020-06-08	Rwanda	451	12
 2020-01-22	Saint Kitts and Nevis	0	0
 2020-01-23	Saint Kitts and Nevis	0	0
 2020-01-24	Saint Kitts and Nevis	0	0
@@ -19733,6 +19875,7 @@ date	country	Total	new_cases
 2020-06-05	Saint Kitts and Nevis	15	0
 2020-06-06	Saint Kitts and Nevis	15	0
 2020-06-07	Saint Kitts and Nevis	15	0
+2020-06-08	Saint Kitts and Nevis	15	0
 2020-01-22	Saint Lucia	0	0
 2020-01-23	Saint Lucia	0	0
 2020-01-24	Saint Lucia	0	0
@@ -19871,6 +20014,7 @@ date	country	Total	new_cases
 2020-06-05	Saint Lucia	19	0
 2020-06-06	Saint Lucia	19	0
 2020-06-07	Saint Lucia	19	0
+2020-06-08	Saint Lucia	19	0
 2020-01-22	Saint Vincent and the Grenadines	0	0
 2020-01-23	Saint Vincent and the Grenadines	0	0
 2020-01-24	Saint Vincent and the Grenadines	0	0
@@ -20009,6 +20153,7 @@ date	country	Total	new_cases
 2020-06-05	Saint Vincent and the Grenadines	26	0
 2020-06-06	Saint Vincent and the Grenadines	26	0
 2020-06-07	Saint Vincent and the Grenadines	27	1
+2020-06-08	Saint Vincent and the Grenadines	27	0
 2020-01-22	San Marino	0	0
 2020-01-23	San Marino	0	0
 2020-01-24	San Marino	0	0
@@ -20147,6 +20292,7 @@ date	country	Total	new_cases
 2020-06-05	San Marino	680	2
 2020-06-06	San Marino	680	0
 2020-06-07	San Marino	680	0
+2020-06-08	San Marino	687	7
 2020-01-22	Sao Tome and Principe	0	0
 2020-01-23	Sao Tome and Principe	0	0
 2020-01-24	Sao Tome and Principe	0	0
@@ -20285,6 +20431,7 @@ date	country	Total	new_cases
 2020-06-05	Sao Tome and Principe	499	14
 2020-06-06	Sao Tome and Principe	499	0
 2020-06-07	Sao Tome and Principe	513	14
+2020-06-08	Sao Tome and Principe	513	0
 2020-01-22	Saudi Arabia	0	0
 2020-01-23	Saudi Arabia	0	0
 2020-01-24	Saudi Arabia	0	0
@@ -20423,6 +20570,7 @@ date	country	Total	new_cases
 2020-06-05	Saudi Arabia	95748	2591
 2020-06-06	Saudi Arabia	98869	3121
 2020-06-07	Saudi Arabia	101914	3045
+2020-06-08	Saudi Arabia	105283	3369
 2020-01-22	Senegal	0	0
 2020-01-23	Senegal	0	0
 2020-01-24	Senegal	0	0
@@ -20561,6 +20709,7 @@ date	country	Total	new_cases
 2020-06-05	Senegal	4155	134
 2020-06-06	Senegal	4249	94
 2020-06-07	Senegal	4328	79
+2020-06-08	Senegal	4427	99
 2020-01-22	Serbia	0	0
 2020-01-23	Serbia	0	0
 2020-01-24	Serbia	0	0
@@ -20699,6 +20848,7 @@ date	country	Total	new_cases
 2020-06-05	Serbia	11667	96
 2020-06-06	Serbia	11741	74
 2020-06-07	Serbia	11823	82
+2020-06-08	Serbia	11896	73
 2020-01-22	Seychelles	0	0
 2020-01-23	Seychelles	0	0
 2020-01-24	Seychelles	0	0
@@ -20837,6 +20987,7 @@ date	country	Total	new_cases
 2020-06-05	Seychelles	11	0
 2020-06-06	Seychelles	11	0
 2020-06-07	Seychelles	11	0
+2020-06-08	Seychelles	11	0
 2020-01-22	Sierra Leone	0	0
 2020-01-23	Sierra Leone	0	0
 2020-01-24	Sierra Leone	0	0
@@ -20975,6 +21126,7 @@ date	country	Total	new_cases
 2020-06-05	Sierra Leone	929	15
 2020-06-06	Sierra Leone	946	17
 2020-06-07	Sierra Leone	969	23
+2020-06-08	Sierra Leone	1001	32
 2020-01-22	Singapore	0	0
 2020-01-23	Singapore	1	1
 2020-01-24	Singapore	3	2
@@ -21113,6 +21265,7 @@ date	country	Total	new_cases
 2020-06-05	Singapore	37183	261
 2020-06-06	Singapore	37527	344
 2020-06-07	Singapore	37910	383
+2020-06-08	Singapore	38296	386
 2020-01-22	Slovakia	0	0
 2020-01-23	Slovakia	0	0
 2020-01-24	Slovakia	0	0
@@ -21251,6 +21404,7 @@ date	country	Total	new_cases
 2020-06-05	Slovakia	1526	0
 2020-06-06	Slovakia	1528	2
 2020-06-07	Slovakia	1528	0
+2020-06-08	Slovakia	1530	2
 2020-01-22	Slovenia	0	0
 2020-01-23	Slovenia	0	0
 2020-01-24	Slovenia	0	0
@@ -21389,6 +21543,7 @@ date	country	Total	new_cases
 2020-06-05	Slovenia	1479	2
 2020-06-06	Slovenia	1484	5
 2020-06-07	Slovenia	1485	1
+2020-06-08	Slovenia	1485	0
 2020-01-22	Somalia	0	0
 2020-01-23	Somalia	0	0
 2020-01-24	Somalia	0	0
@@ -21527,6 +21682,7 @@ date	country	Total	new_cases
 2020-06-05	Somalia	2204	0
 2020-06-06	Somalia	2289	85
 2020-06-07	Somalia	2334	45
+2020-06-08	Somalia	2368	34
 2020-01-22	South Africa	0	0
 2020-01-23	South Africa	0	0
 2020-01-24	South Africa	0	0
@@ -21665,6 +21821,7 @@ date	country	Total	new_cases
 2020-06-05	South Africa	43434	2642
 2020-06-06	South Africa	45973	2539
 2020-06-07	South Africa	48285	2312
+2020-06-08	South Africa	50879	2594
 2020-01-22	South Sudan	0	0
 2020-01-23	South Sudan	0	0
 2020-01-24	South Sudan	0	0
@@ -21803,6 +21960,7 @@ date	country	Total	new_cases
 2020-06-05	South Sudan	994	0
 2020-06-06	South Sudan	994	0
 2020-06-07	South Sudan	1317	323
+2020-06-08	South Sudan	1604	287
 2020-01-22	Spain	0	0
 2020-01-23	Spain	0	0
 2020-01-24	Spain	0	0
@@ -21941,6 +22099,7 @@ date	country	Total	new_cases
 2020-06-05	Spain	240978	318
 2020-06-06	Spain	241310	332
 2020-06-07	Spain	241550	240
+2020-06-08	Spain	241717	167
 2020-01-22	Sri Lanka	0	0
 2020-01-23	Sri Lanka	0	0
 2020-01-24	Sri Lanka	0	0
@@ -22079,6 +22238,7 @@ date	country	Total	new_cases
 2020-06-05	Sri Lanka	1801	4
 2020-06-06	Sri Lanka	1814	13
 2020-06-07	Sri Lanka	1835	21
+2020-06-08	Sri Lanka	1857	22
 2020-01-22	Sudan	0	0
 2020-01-23	Sudan	0	0
 2020-01-24	Sudan	0	0
@@ -22217,6 +22377,7 @@ date	country	Total	new_cases
 2020-06-05	Sudan	5865	151
 2020-06-06	Sudan	6081	216
 2020-06-07	Sudan	6081	0
+2020-06-08	Sudan	6242	161
 2020-01-22	Suriname	0	0
 2020-01-23	Suriname	0	0
 2020-01-24	Suriname	0	0
@@ -22355,6 +22516,7 @@ date	country	Total	new_cases
 2020-06-05	Suriname	90	8
 2020-06-06	Suriname	100	10
 2020-06-07	Suriname	122	22
+2020-06-08	Suriname	128	6
 2020-01-22	Sweden	0	0
 2020-01-23	Sweden	0	0
 2020-01-24	Sweden	0	0
@@ -22493,6 +22655,7 @@ date	country	Total	new_cases
 2020-06-05	Sweden	42939	1056
 2020-06-06	Sweden	43887	948
 2020-06-07	Sweden	44730	843
+2020-06-08	Sweden	45133	403
 2020-01-22	Switzerland	0	0
 2020-01-23	Switzerland	0	0
 2020-01-24	Switzerland	0	0
@@ -22631,6 +22794,7 @@ date	country	Total	new_cases
 2020-06-05	Switzerland	30936	23
 2020-06-06	Switzerland	30956	20
 2020-06-07	Switzerland	30965	9
+2020-06-08	Switzerland	30972	7
 2020-01-22	Syria	0	0
 2020-01-23	Syria	0	0
 2020-01-24	Syria	0	0
@@ -22769,6 +22933,7 @@ date	country	Total	new_cases
 2020-06-05	Syria	124	0
 2020-06-06	Syria	125	1
 2020-06-07	Syria	141	16
+2020-06-08	Syria	144	3
 2020-01-22	Taiwan*	1	0
 2020-01-23	Taiwan*	1	0
 2020-01-24	Taiwan*	3	2
@@ -22907,6 +23072,7 @@ date	country	Total	new_cases
 2020-06-05	Taiwan*	443	0
 2020-06-06	Taiwan*	443	0
 2020-06-07	Taiwan*	443	0
+2020-06-08	Taiwan*	443	0
 2020-01-22	Tajikistan	0	0
 2020-01-23	Tajikistan	0	0
 2020-01-24	Tajikistan	0	0
@@ -23045,6 +23211,7 @@ date	country	Total	new_cases
 2020-06-05	Tajikistan	4370	81
 2020-06-06	Tajikistan	4453	83
 2020-06-07	Tajikistan	4529	76
+2020-06-08	Tajikistan	4609	80
 2020-01-22	Tanzania	0	0
 2020-01-23	Tanzania	0	0
 2020-01-24	Tanzania	0	0
@@ -23183,6 +23350,7 @@ date	country	Total	new_cases
 2020-06-05	Tanzania	509	0
 2020-06-06	Tanzania	509	0
 2020-06-07	Tanzania	509	0
+2020-06-08	Tanzania	509	0
 2020-01-22	Thailand	2	0
 2020-01-23	Thailand	3	1
 2020-01-24	Thailand	5	2
@@ -23321,6 +23489,7 @@ date	country	Total	new_cases
 2020-06-05	Thailand	3102	1
 2020-06-06	Thailand	3104	2
 2020-06-07	Thailand	3112	8
+2020-06-08	Thailand	3119	7
 2020-01-22	Timor-Leste	0	0
 2020-01-23	Timor-Leste	0	0
 2020-01-24	Timor-Leste	0	0
@@ -23459,6 +23628,7 @@ date	country	Total	new_cases
 2020-06-05	Timor-Leste	24	0
 2020-06-06	Timor-Leste	24	0
 2020-06-07	Timor-Leste	24	0
+2020-06-08	Timor-Leste	24	0
 2020-01-22	Togo	0	0
 2020-01-23	Togo	0	0
 2020-01-24	Togo	0	0
@@ -23597,6 +23767,7 @@ date	country	Total	new_cases
 2020-06-05	Togo	485	20
 2020-06-06	Togo	487	2
 2020-06-07	Togo	495	8
+2020-06-08	Togo	497	2
 2020-01-22	Trinidad and Tobago	0	0
 2020-01-23	Trinidad and Tobago	0	0
 2020-01-24	Trinidad and Tobago	0	0
@@ -23735,6 +23906,7 @@ date	country	Total	new_cases
 2020-06-05	Trinidad and Tobago	117	0
 2020-06-06	Trinidad and Tobago	117	0
 2020-06-07	Trinidad and Tobago	117	0
+2020-06-08	Trinidad and Tobago	117	0
 2020-01-22	Tunisia	0	0
 2020-01-23	Tunisia	0	0
 2020-01-24	Tunisia	0	0
@@ -23873,6 +24045,7 @@ date	country	Total	new_cases
 2020-06-05	Tunisia	1087	0
 2020-06-06	Tunisia	1087	0
 2020-06-07	Tunisia	1087	0
+2020-06-08	Tunisia	1087	0
 2020-01-22	Turkey	0	0
 2020-01-23	Turkey	0	0
 2020-01-24	Turkey	0	0
@@ -24011,6 +24184,7 @@ date	country	Total	new_cases
 2020-06-05	Turkey	168340	930
 2020-06-06	Turkey	169218	878
 2020-06-07	Turkey	170132	914
+2020-06-08	Turkey	171121	989
 2020-01-22	Uganda	0	0
 2020-01-23	Uganda	0	0
 2020-01-24	Uganda	0	0
@@ -24149,6 +24323,7 @@ date	country	Total	new_cases
 2020-06-05	Uganda	557	35
 2020-06-06	Uganda	593	36
 2020-06-07	Uganda	616	23
+2020-06-08	Uganda	646	30
 2020-01-22	Ukraine	0	0
 2020-01-23	Ukraine	0	0
 2020-01-24	Ukraine	0	0
@@ -24287,6 +24462,7 @@ date	country	Total	new_cases
 2020-06-05	Ukraine	26542	561
 2020-06-06	Ukraine	27101	559
 2020-06-07	Ukraine	27599	498
+2020-06-08	Ukraine	28077	478
 2020-01-22	United Arab Emirates	0	0
 2020-01-23	United Arab Emirates	0	0
 2020-01-24	United Arab Emirates	0	0
@@ -24425,6 +24601,7 @@ date	country	Total	new_cases
 2020-06-05	United Arab Emirates	37642	624
 2020-06-06	United Arab Emirates	38268	626
 2020-06-07	United Arab Emirates	38808	540
+2020-06-08	United Arab Emirates	39376	568
 2020-01-22	United Kingdom	0	0
 2020-01-23	United Kingdom	0	0
 2020-01-24	United Kingdom	0	0
@@ -24563,6 +24740,7 @@ date	country	Total	new_cases
 2020-06-05	United Kingdom	284734	1655
 2020-06-06	United Kingdom	286294	1560
 2020-06-07	United Kingdom	287621	1327
+2020-06-08	United Kingdom	288834	1213
 2020-01-22	Uruguay	0	0
 2020-01-23	Uruguay	0	0
 2020-01-24	Uruguay	0	0
@@ -24701,6 +24879,7 @@ date	country	Total	new_cases
 2020-06-05	Uruguay	834	2
 2020-06-06	Uruguay	845	11
 2020-06-07	Uruguay	845	0
+2020-06-08	Uruguay	845	0
 2020-01-22	US	1	0
 2020-01-23	US	1	0
 2020-01-24	US	2	1
@@ -24839,6 +25018,7 @@ date	country	Total	new_cases
 2020-06-05	US	1897380	24720
 2020-06-06	US	1920061	22681
 2020-06-07	US	1943647	23586
+2020-06-08	US	1960897	17250
 2020-01-22	Uzbekistan	0	0
 2020-01-23	Uzbekistan	0	0
 2020-01-24	Uzbekistan	0	0
@@ -24977,6 +25157,7 @@ date	country	Total	new_cases
 2020-06-05	Uzbekistan	4007	68
 2020-06-06	Uzbekistan	4094	87
 2020-06-07	Uzbekistan	4331	237
+2020-06-08	Uzbekistan	4440	109
 2020-01-22	Venezuela	0	0
 2020-01-23	Venezuela	0	0
 2020-01-24	Venezuela	0	0
@@ -25115,6 +25296,7 @@ date	country	Total	new_cases
 2020-06-05	Venezuela	2145	58
 2020-06-06	Venezuela	2316	171
 2020-06-07	Venezuela	2377	61
+2020-06-08	Venezuela	2473	96
 2020-01-22	Vietnam	0	0
 2020-01-23	Vietnam	2	2
 2020-01-24	Vietnam	2	0
@@ -25253,6 +25435,7 @@ date	country	Total	new_cases
 2020-06-05	Vietnam	328	0
 2020-06-06	Vietnam	329	1
 2020-06-07	Vietnam	331	2
+2020-06-08	Vietnam	332	1
 2020-01-22	West Bank and Gaza	0	0
 2020-01-23	West Bank and Gaza	0	0
 2020-01-24	West Bank and Gaza	0	0
@@ -25391,6 +25574,7 @@ date	country	Total	new_cases
 2020-06-05	West Bank and Gaza	464	0
 2020-06-06	West Bank and Gaza	464	0
 2020-06-07	West Bank and Gaza	472	8
+2020-06-08	West Bank and Gaza	473	1
 2020-01-22	Western Sahara	0	0
 2020-01-23	Western Sahara	0	0
 2020-01-24	Western Sahara	0	0
@@ -25529,6 +25713,7 @@ date	country	Total	new_cases
 2020-06-05	Western Sahara	9	0
 2020-06-06	Western Sahara	9	0
 2020-06-07	Western Sahara	9	0
+2020-06-08	Western Sahara	9	0
 2020-01-22	Yemen	0	0
 2020-01-23	Yemen	0	0
 2020-01-24	Yemen	0	0
@@ -25667,6 +25852,7 @@ date	country	Total	new_cases
 2020-06-05	Yemen	469	16
 2020-06-06	Yemen	482	13
 2020-06-07	Yemen	484	2
+2020-06-08	Yemen	496	12
 2020-01-22	Zambia	0	0
 2020-01-23	Zambia	0	0
 2020-01-24	Zambia	0	0
@@ -25805,6 +25991,7 @@ date	country	Total	new_cases
 2020-06-05	Zambia	1089	0
 2020-06-06	Zambia	1089	0
 2020-06-07	Zambia	1089	0
+2020-06-08	Zambia	1200	111
 2020-01-22	Zimbabwe	0	0
 2020-01-23	Zimbabwe	0	0
 2020-01-24	Zimbabwe	0	0
@@ -25943,3 +26130,4 @@ date	country	Total	new_cases
 2020-06-05	Zimbabwe	265	28
 2020-06-06	Zimbabwe	279	14
 2020-06-07	Zimbabwe	282	3
+2020-06-08	Zimbabwe	287	5
