@@ -69,7 +69,7 @@ ui <- fluidPage(
         column(2,
                dateInput("startDate", "Starting Date", "2020-02-14"),
                actionButton("refresh", "Refresh Data"),
-               checkboxInput("filter_outliers", label = "Remove outliers", value=TRUE)),
+               checkboxInput("filter_outliers", label = "Remove outliers", value=FALSE)),
         column(2,
                numericInput("threshold", "Starting Cases", 300, min=0, step=500),
                sliderInput("smoothing" , "Fit Smoothing", min=0, max=1, value=0.5)),
